@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
 		3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */; };
 		3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCEB23A69F72003545D7 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCompleteIOSAppDevelopmentBootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFFCE723A69F72003545D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EC583B823A6C6AF00175E01 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
+				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
+				3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		3EC583B923A6C6C600175E01 /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				3EEFFCF523A69F75003545D7 /* Info.plist */,
+				3EEFFCE723A69F72003545D7 /* AppDelegate.swift */,
+				3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */,
+				3EEFFCF023A69F75003545D7 /* Assets.xcassets */,
+			);
+			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		3EC583BA23A6C6D500175E01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3EEFFCF223A69F75003545D7 /* LaunchScreen.storyboard */,
+				3EEFFCED23A69F72003545D7 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		3EEFFCDB23A69F72003545D7 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +90,9 @@
 		3EEFFCE623A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse */ = {
 			isa = PBXGroup;
 			children = (
-				3EEFFCE723A69F72003545D7 /* AppDelegate.swift */,
-				3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */,
-				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
-				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
-				3EEFFCED23A69F72003545D7 /* Main.storyboard */,
-				3EEFFCF023A69F75003545D7 /* Assets.xcassets */,
-				3EEFFCF223A69F75003545D7 /* LaunchScreen.storyboard */,
-				3EEFFCF523A69F75003545D7 /* Info.plist */,
+				3EC583B823A6C6AF00175E01 /* Controllers */,
+				3EC583BA23A6C6D500175E01 /* View */,
+				3EC583B923A6C6C600175E01 /* SupportFile */,
 			);
 			path = TheCompleteIOSAppDevelopmentBootcampCourse;
 			sourceTree = "<group>";
@@ -145,6 +172,7 @@
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
+				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +318,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H6CKN6S5G;
-				INFOPLIST_FILE = TheCompleteIOSAppDevelopmentBootcampCourse/Info.plist;
+				INFOPLIST_FILE = TheCompleteIOSAppDevelopmentBootcampCourse/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +336,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H6CKN6S5G;
-				INFOPLIST_FILE = TheCompleteIOSAppDevelopmentBootcampCourse/Info.plist;
+				INFOPLIST_FILE = TheCompleteIOSAppDevelopmentBootcampCourse/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
