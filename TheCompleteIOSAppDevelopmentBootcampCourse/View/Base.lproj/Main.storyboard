@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TheCompleteIOSAppDevelopmentBootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Complete iOS App Development Bootcamp" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZR-i9-Gn6">
+                                <rect key="frame" x="27.5" y="60" width="265" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="bGK-k3-RTx"/>
+                                    <constraint firstAttribute="width" constant="265" id="o9C-Py-EYU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxh-cz-DvS">
+                                <rect key="frame" x="140.5" y="143" width="39" height="30"/>
+                                <state key="normal" title="Dices"/>
+                                <connections>
+                                    <action selector="dicecButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FXB-ry-3IY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S7A-CD-X5t">
+                                <rect key="frame" x="124.5" y="215" width="71" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lWK-OT-SQP"/>
+                                </constraints>
+                                <state key="normal" title="Magic Ball"/>
+                                <connections>
+                                    <action selector="magicBallButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aYz-lh-JtR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94747704267501831" green="0.927440345287323" blue="0.77656263113021851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Xxh-cz-DvS" firstAttribute="top" secondItem="VZR-i9-Gn6" secondAttribute="bottom" constant="40" id="6hX-PV-mNc"/>
+                            <constraint firstItem="VZR-i9-Gn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8jP-oX-Oyf"/>
+                            <constraint firstItem="S7A-CD-X5t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L66-XF-g1X"/>
+                            <constraint firstItem="VZR-i9-Gn6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="UOq-a9-WWa"/>
+                            <constraint firstItem="Xxh-cz-DvS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VSb-df-cv0"/>
+                            <constraint firstItem="S7A-CD-X5t" firstAttribute="top" secondItem="Xxh-cz-DvS" secondAttribute="bottom" constant="42" id="xmI-93-uF3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.75" y="138.38028169014083"/>
+        </scene>
+        <!--Dices View Controller-->
+        <scene sceneID="7Ha-Wn-rJH">
+            <objects>
+                <viewController storyboardIdentifier="DicesVCID" id="dbG-rf-wy2" customClass="DicesViewController" customModule="TheCompleteIOSAppDevelopmentBootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bIG-TG-Mjb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundGreen" translatesAutoresizingMaskIntoConstraints="NO" id="pzK-HW-SWF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UQ0-hP-a2j">
+                                <rect key="frame" x="62" y="60" width="196" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="WAg-4f-Oq9"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-hn-Det">
+                                <rect key="frame" x="130" y="376" width="200" height="200"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-xt-j6M">
+                                <rect key="frame" x="-10" y="376" width="200" height="200"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cKr-20-clA">
+                                <rect key="frame" x="103" y="498" width="114" height="30"/>
+                                <state key="normal" title="Бросить кубики">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButtonTapped:" destination="dbG-rf-wy2" eventType="touchUpInside" id="9zu-mF-2Bb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="pzK-HW-SWF" secondAttribute="bottom" id="3o7-Cp-8T8"/>
+                            <constraint firstItem="NqD-hn-Det" firstAttribute="centerX" secondItem="bIG-TG-Mjb" secondAttribute="centerX" constant="70" id="6ZS-V3-tda"/>
+                            <constraint firstItem="NqD-hn-Det" firstAttribute="top" secondItem="UQ0-hP-a2j" secondAttribute="bottom" constant="60" id="CM7-1c-fwE"/>
+                            <constraint firstItem="4Y2-xt-j6M" firstAttribute="centerX" secondItem="bIG-TG-Mjb" secondAttribute="centerX" constant="-70" id="IwJ-Le-ULo"/>
+                            <constraint firstItem="CTS-iz-TVf" firstAttribute="bottom" secondItem="cKr-20-clA" secondAttribute="bottom" constant="40" id="MJz-OT-d9C"/>
+                            <constraint firstItem="4Y2-xt-j6M" firstAttribute="top" secondItem="UQ0-hP-a2j" secondAttribute="bottom" constant="60" id="Nzl-cv-yMc"/>
+                            <constraint firstItem="pzK-HW-SWF" firstAttribute="trailing" secondItem="CTS-iz-TVf" secondAttribute="trailing" id="U0a-S3-ygl"/>
+                            <constraint firstItem="pzK-HW-SWF" firstAttribute="leading" secondItem="CTS-iz-TVf" secondAttribute="leading" id="Ysc-hH-TiV"/>
+                            <constraint firstItem="cKr-20-clA" firstAttribute="centerX" secondItem="bIG-TG-Mjb" secondAttribute="centerX" id="hBA-dC-7Ky"/>
+                            <constraint firstItem="pzK-HW-SWF" firstAttribute="top" secondItem="bIG-TG-Mjb" secondAttribute="top" id="hdl-OZ-jnn"/>
+                            <constraint firstItem="pzK-HW-SWF" firstAttribute="trailing" secondItem="CTS-iz-TVf" secondAttribute="trailing" id="j2N-Bq-waQ"/>
+                            <constraint firstItem="UQ0-hP-a2j" firstAttribute="centerX" secondItem="bIG-TG-Mjb" secondAttribute="centerX" id="lUF-w7-Jth"/>
+                            <constraint firstItem="pzK-HW-SWF" firstAttribute="leading" secondItem="CTS-iz-TVf" secondAttribute="leading" id="vAP-6o-ZUj"/>
+                            <constraint firstItem="UQ0-hP-a2j" firstAttribute="top" secondItem="CTS-iz-TVf" secondAttribute="top" constant="60" id="vzf-PZ-fPu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CTS-iz-TVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftDiceImageView" destination="4Y2-xt-j6M" id="ipg-65-fVA"/>
+                        <outlet property="rightDiceImageView" destination="NqD-hn-Det" id="eRL-va-svb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlq-i8-jUL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="890.625" y="136.26760563380282"/>
+        </scene>
+        <!--Magic Ball View Controller-->
+        <scene sceneID="S81-nR-gUK">
+            <objects>
+                <viewController storyboardIdentifier="MagicBallVCID" id="oU9-50-cSy" customClass="MagicBallViewController" customModule="TheCompleteIOSAppDevelopmentBootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iq7-Mp-bd1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="backgroundBlue" translatesAutoresizingMaskIntoConstraints="NO" id="aOp-f3-baI">
+                                <rect key="frame" x="0.0" y="-44" width="320" height="646"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Спроси меня" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivx-7s-Alr">
+                                <rect key="frame" x="88" y="80" width="144" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMh-Sc-rZB">
+                                <rect key="frame" x="125" y="498" width="70" height="30"/>
+                                <state key="normal" title="Спросить">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="askButtonTapped:" destination="oU9-50-cSy" eventType="touchUpInside" id="XOo-Jg-eSo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball3" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Yq-4EH">
+                                <rect key="frame" x="80" y="165" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="bEe-Nx-4lx"/>
+                                    <constraint firstAttribute="width" constant="160" id="hre-bq-7qG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jaH-Yq-4EH" firstAttribute="top" secondItem="Ivx-7s-Alr" secondAttribute="bottom" constant="56" id="3kX-x9-YZz"/>
+                            <constraint firstItem="aOp-f3-baI" firstAttribute="top" secondItem="iq7-Mp-bd1" secondAttribute="topMargin" constant="-44" id="BZh-ba-HA1"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="aOp-f3-baI" secondAttribute="bottom" constant="-34" id="JpN-vu-Hxb"/>
+                            <constraint firstItem="aOp-f3-baI" firstAttribute="leading" secondItem="iq7-Mp-bd1" secondAttribute="leading" id="KVy-zh-lv2"/>
+                            <constraint firstItem="Ivx-7s-Alr" firstAttribute="centerX" secondItem="iq7-Mp-bd1" secondAttribute="centerX" id="MIo-0x-HSg"/>
+                            <constraint firstItem="Snb-F5-9LL" firstAttribute="bottom" secondItem="lMh-Sc-rZB" secondAttribute="bottom" constant="40" id="Mc1-lI-4fP"/>
+                            <constraint firstItem="Ivx-7s-Alr" firstAttribute="top" secondItem="Snb-F5-9LL" secondAttribute="top" constant="80" id="bcG-LV-roI"/>
+                            <constraint firstItem="lMh-Sc-rZB" firstAttribute="centerX" secondItem="iq7-Mp-bd1" secondAttribute="centerX" id="cdJ-5r-Dtn"/>
+                            <constraint firstItem="jaH-Yq-4EH" firstAttribute="centerX" secondItem="iq7-Mp-bd1" secondAttribute="centerX" id="gYh-8U-Dbr"/>
+                            <constraint firstAttribute="trailing" secondItem="aOp-f3-baI" secondAttribute="trailing" id="m5X-37-goV"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Snb-F5-9LL"/>
+                    </view>
+                    <connections>
+                        <outlet property="magicBallImageView" destination="jaH-Yq-4EH" id="pVA-zB-7Qg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bK9-Fu-ouo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1646.25" y="135.21126760563379"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backgroundBlue" width="444.5" height="414"/>
+        <image name="backgroundGreen" width="444.5" height="414"/>
+        <image name="ball3" width="305" height="273.5"/>
+        <image name="dice1" width="100" height="100"/>
+        <image name="diceeLogo" width="196" height="128"/>
+    </resources>
+</document>
