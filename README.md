@@ -4,6 +4,13 @@
 
 Swift 5, iOS 13.3, Xcode 11.3
 
+<b>Ксилофон</b>
+- При нажатии на кнопку звучит соответствушая нота
+
+Видео: [ссылка](https://drive.google.com/open?id=1Vu7BxXRiPq4utw97uU37Yoizuhj-g319)
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/KqDB49g/Screenshot-2019-12-18-at-21-26-34.png" width="200"></a>
+
 <b>Калькулятор</b>
 - Auto layout (только UI, без функционала)
 
