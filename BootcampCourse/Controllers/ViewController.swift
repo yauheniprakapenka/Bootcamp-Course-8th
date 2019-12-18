@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBAction func dicecButtonTapped(_ sender: UIButton) {
         presentVC(identifier: "DicesVCID")
     }
@@ -22,7 +22,11 @@ class ViewController: UIViewController {
         presentVC(identifier: "CalculatorVCID")
     }
     
-        private func presentVC(identifier: String) {
+    @IBAction func xylophoneButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "XylophoneVCID")
+    }
+    
+    private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
         present(vc, animated: true)
