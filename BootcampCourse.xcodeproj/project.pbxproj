@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */; };
 		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
 		3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */; };
@@ -18,8 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
-		3EEFFCE423A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TheCompleteIOSAppDevelopmentBootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFFCE723A69F72003545D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3EEFFCEB23A69F72003545D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
+				3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */,
 				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
 				3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */,
 			);
@@ -74,7 +77,7 @@
 		3EEFFCDB23A69F72003545D7 = {
 			isa = PBXGroup;
 			children = (
-				3EEFFCE623A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse */,
+				3EEFFCE623A69F72003545D7 /* BootcampCourse */,
 				3EEFFCE523A69F72003545D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -82,27 +85,27 @@
 		3EEFFCE523A69F72003545D7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3EEFFCE423A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse.app */,
+				3EEFFCE423A69F72003545D7 /* BootcampCourse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3EEFFCE623A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse */ = {
+		3EEFFCE623A69F72003545D7 /* BootcampCourse */ = {
 			isa = PBXGroup;
 			children = (
 				3EC583B823A6C6AF00175E01 /* Controllers */,
 				3EC583BA23A6C6D500175E01 /* View */,
 				3EC583B923A6C6C600175E01 /* SupportFile */,
 			);
-			path = TheCompleteIOSAppDevelopmentBootcampCourse;
+			path = BootcampCourse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3EEFFCE323A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse */ = {
+		3EEFFCE323A69F72003545D7 /* BootcampCourse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3EEFFCF823A69F75003545D7 /* Build configuration list for PBXNativeTarget "TheCompleteIOSAppDevelopmentBootcampCourse" */;
+			buildConfigurationList = 3EEFFCF823A69F75003545D7 /* Build configuration list for PBXNativeTarget "BootcampCourse" */;
 			buildPhases = (
 				3EEFFCE023A69F72003545D7 /* Sources */,
 				3EEFFCE123A69F72003545D7 /* Frameworks */,
@@ -112,9 +115,9 @@
 			);
 			dependencies = (
 			);
-			name = TheCompleteIOSAppDevelopmentBootcampCourse;
+			name = BootcampCourse;
 			productName = TheCompleteIOSAppDevelopmentBootcampCourse;
-			productReference = 3EEFFCE423A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse.app */;
+			productReference = 3EEFFCE423A69F72003545D7 /* BootcampCourse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -132,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3EEFFCDF23A69F72003545D7 /* Build configuration list for PBXProject "TheCompleteIOSAppDevelopmentBootcampCourse" */;
+			buildConfigurationList = 3EEFFCDF23A69F72003545D7 /* Build configuration list for PBXProject "BootcampCourse" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -145,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3EEFFCE323A69F72003545D7 /* TheCompleteIOSAppDevelopmentBootcampCourse */,
+				3EEFFCE323A69F72003545D7 /* BootcampCourse */,
 			);
 		};
 /* End PBXProject section */
@@ -172,6 +175,7 @@
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
+				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H6CKN6S5G;
-				INFOPLIST_FILE = TheCompleteIOSAppDevelopmentBootcampCourse/SupportFile/Info.plist;
+				INFOPLIST_FILE = BootcampCourse/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,7 +340,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2H6CKN6S5G;
-				INFOPLIST_FILE = TheCompleteIOSAppDevelopmentBootcampCourse/SupportFile/Info.plist;
+				INFOPLIST_FILE = BootcampCourse/SupportFile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -351,7 +355,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3EEFFCDF23A69F72003545D7 /* Build configuration list for PBXProject "TheCompleteIOSAppDevelopmentBootcampCourse" */ = {
+		3EEFFCDF23A69F72003545D7 /* Build configuration list for PBXProject "BootcampCourse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3EEFFCF623A69F75003545D7 /* Debug */,
@@ -360,7 +364,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3EEFFCF823A69F75003545D7 /* Build configuration list for PBXNativeTarget "TheCompleteIOSAppDevelopmentBootcampCourse" */ = {
+		3EEFFCF823A69F75003545D7 /* Build configuration list for PBXNativeTarget "BootcampCourse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3EEFFCF923A69F75003545D7 /* Debug */,
