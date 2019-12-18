@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */; };
+		3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */; };
+		3E7AD2C623AA7681007BAF26 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BF23AA7681007BAF26 /* F.wav */; };
+		3E7AD2C723AA7681007BAF26 /* E.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C023AA7681007BAF26 /* E.wav */; };
+		3E7AD2C823AA7681007BAF26 /* G.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C123AA7681007BAF26 /* G.wav */; };
+		3E7AD2C923AA7681007BAF26 /* B.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C223AA7681007BAF26 /* B.wav */; };
+		3E7AD2CA23AA7681007BAF26 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C323AA7681007BAF26 /* C.wav */; };
+		3E7AD2CB23AA7681007BAF26 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C423AA7681007BAF26 /* D.wav */; };
+		3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C523AA7681007BAF26 /* A.wav */; };
 		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
 		3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */; };
@@ -20,6 +28,14 @@
 
 /* Begin PBXFileReference section */
 		3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneViewController.swift; sourceTree = "<group>"; };
+		3E7AD2BF23AA7681007BAF26 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
+		3E7AD2C023AA7681007BAF26 /* E.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = E.wav; sourceTree = "<group>"; };
+		3E7AD2C123AA7681007BAF26 /* G.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = G.wav; sourceTree = "<group>"; };
+		3E7AD2C223AA7681007BAF26 /* B.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = B.wav; sourceTree = "<group>"; };
+		3E7AD2C323AA7681007BAF26 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
+		3E7AD2C423AA7681007BAF26 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
+		3E7AD2C523AA7681007BAF26 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFFCE723A69F72003545D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +59,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E7AD2BE23AA766B007BAF26 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				3E7AD2C523AA7681007BAF26 /* A.wav */,
+				3E7AD2C223AA7681007BAF26 /* B.wav */,
+				3E7AD2C323AA7681007BAF26 /* C.wav */,
+				3E7AD2C423AA7681007BAF26 /* D.wav */,
+				3E7AD2C023AA7681007BAF26 /* E.wav */,
+				3E7AD2BF23AA7681007BAF26 /* F.wav */,
+				3E7AD2C123AA7681007BAF26 /* G.wav */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		3EC583B823A6C6AF00175E01 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -50,6 +80,7 @@
 				3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */,
 				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
 				3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */,
+				3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -57,6 +88,7 @@
 		3EC583B923A6C6C600175E01 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
+				3E7AD2BE23AA766B007BAF26 /* Sound */,
 				3EEFFCF523A69F75003545D7 /* Info.plist */,
 				3EEFFCE723A69F72003545D7 /* AppDelegate.swift */,
 				3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */,
@@ -158,9 +190,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E7AD2CB23AA7681007BAF26 /* D.wav in Resources */,
+				3E7AD2C823AA7681007BAF26 /* G.wav in Resources */,
+				3E7AD2C723AA7681007BAF26 /* E.wav in Resources */,
 				3EEFFCF423A69F75003545D7 /* LaunchScreen.storyboard in Resources */,
+				3E7AD2C923AA7681007BAF26 /* B.wav in Resources */,
+				3E7AD2CA23AA7681007BAF26 /* C.wav in Resources */,
 				3EEFFCF123A69F75003545D7 /* Assets.xcassets in Resources */,
 				3EEFFCEF23A69F72003545D7 /* Main.storyboard in Resources */,
+				3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */,
+				3E7AD2C623AA7681007BAF26 /* F.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +216,7 @@
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
 				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
+				3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
