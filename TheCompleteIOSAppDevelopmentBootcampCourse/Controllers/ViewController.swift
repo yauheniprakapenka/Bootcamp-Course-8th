@@ -18,7 +18,11 @@ class ViewController: UIViewController {
         presentVC(identifier: "MagicBallVCID")
     }
     
-    private func presentVC(identifier: String) {
+    @IBAction func calculatorButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "CalculatorVCID")
+    }
+    
+        private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
         present(vc, animated: true)
