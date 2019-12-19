@@ -17,6 +17,7 @@
 		3E7AD2CB23AA7681007BAF26 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C423AA7681007BAF26 /* D.wav */; };
 		3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C523AA7681007BAF26 /* A.wav */; };
 		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
+		3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
 		3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */; };
 		3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCEB23A69F72003545D7 /* ViewController.swift */; };
@@ -37,6 +38,7 @@
 		3E7AD2C423AA7681007BAF26 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 		3E7AD2C523AA7681007BAF26 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
+		3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsViewController.swift; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFFCE723A69F72003545D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
+				3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */,
 				3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */,
 				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
 				3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */,
@@ -210,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */,
 				3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */,
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
