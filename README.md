@@ -4,6 +4,14 @@
 
 Swift 5, iOS 13.3, Xcode 11.3
 
+<b>Приготовление яиц</b>
+- Различное время приготовления яиц
+- После приготовления воспроизводится звуковой сигнал
+
+Видео: [ссылка](https://drive.google.com/open?id=1SMRaGpuZUDm1Q700P8BSUyCaSKA15SrI)
+
+<a href="https://ibb.co/vHqGp2F"><img src="https://i.ibb.co/f2F5fmg/IMG-1347.png" width="200"></a>
+
 <b>Ксилофон</b>
 - При нажатии на кнопку звучит соответствушая нота
 
