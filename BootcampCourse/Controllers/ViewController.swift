@@ -26,6 +26,10 @@ class ViewController: UIViewController {
         presentVC(identifier: "XylophoneVCID")
     }
     
+    @IBAction func eggsButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "EggsVCID")
+    }
+    
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
