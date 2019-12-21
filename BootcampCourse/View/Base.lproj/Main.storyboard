@@ -584,7 +584,7 @@
                                     <action selector="answerButtonTapped:" destination="094-2s-yBB" eventType="touchUpInside" id="cuZ-KT-hHa"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="j3b-az-Zvh">
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="j3b-az-Zvh">
                                 <rect key="frame" x="20" y="827" width="374" height="5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="5" id="iIm-nL-F8u"/>

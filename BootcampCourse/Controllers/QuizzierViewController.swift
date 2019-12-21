@@ -65,6 +65,7 @@ class QuizzierViewController: UIViewController {
         questionLabel.text = quiz[questionNumber].question
         truebutton.backgroundColor = .clear
         falseButton.backgroundColor = .clear
+        progressView.setProgress(Float(questionNumber + 1) / Float(quiz.count), animated: true)
     }
     
     private func makeTrueButton() {
