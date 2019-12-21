@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */; };
+		3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */; };
+		3E0A97D623AE0EE100B6B598 /* Background-Bubbles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */; };
+		3E0A97D823AE50E600B6B598 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D723AE50E600B6B598 /* Question.swift */; };
 		3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */; };
 		3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */; };
 		3E7AD2C623AA7681007BAF26 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BF23AA7681007BAF26 /* F.wav */; };
@@ -29,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzierViewController.swift; sourceTree = "<group>"; };
+		3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@3x.png"; sourceTree = "<group>"; };
+		3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@2x.png"; sourceTree = "<group>"; };
+		3E0A97D723AE50E600B6B598 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BF23AA7681007BAF26 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
@@ -63,6 +71,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E0A97D223AE0EC400B6B598 /* Quizzier */ = {
+			isa = PBXGroup;
+			children = (
+				3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */,
+				3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */,
+			);
+			path = Quizzier;
+			sourceTree = "<group>";
+		};
 		3E7AD2BE23AA766B007BAF26 /* Xylophone */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,11 +98,13 @@
 			isa = PBXGroup;
 			children = (
 				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
-				3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */,
-				3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */,
 				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
 				3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */,
+				3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */,
 				3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */,
+				3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */,
+				3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */,
+				3E0A97D723AE50E600B6B598 /* Question.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -93,6 +112,7 @@
 		3EC583B923A6C6C600175E01 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
+				3E0A97D223AE0EC400B6B598 /* Quizzier */,
 				3EE5F03623AD0A6200DBFAC6 /* Eggs */,
 				3E7AD2BE23AA766B007BAF26 /* Xylophone */,
 				3EEFFCF523A69F75003545D7 /* Info.plist */,
@@ -208,6 +228,7 @@
 				3E7AD2C823AA7681007BAF26 /* G.wav in Resources */,
 				3E7AD2C723AA7681007BAF26 /* E.wav in Resources */,
 				3EE5F03823AD0B2100DBFAC6 /* alarm_sound.mp3 in Resources */,
+				3E0A97D623AE0EE100B6B598 /* Background-Bubbles@2x.png in Resources */,
 				3EEFFCF423A69F75003545D7 /* LaunchScreen.storyboard in Resources */,
 				3E7AD2C923AA7681007BAF26 /* B.wav in Resources */,
 				3E7AD2CA23AA7681007BAF26 /* C.wav in Resources */,
@@ -215,6 +236,7 @@
 				3EEFFCEF23A69F72003545D7 /* Main.storyboard in Resources */,
 				3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */,
 				3E7AD2C623AA7681007BAF26 /* F.wav in Resources */,
+				3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,8 +249,10 @@
 			files = (
 				3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */,
 				3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */,
+				3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */,
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
+				3E0A97D823AE50E600B6B598 /* Question.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
 				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,

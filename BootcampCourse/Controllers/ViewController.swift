@@ -30,6 +30,11 @@ class ViewController: UIViewController {
         presentVC(identifier: "EggsVCID")
     }
     
+    @IBAction func quizzierButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "quizzierVCID")
+    }
+    
+    
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
