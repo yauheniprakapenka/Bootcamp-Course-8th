@@ -45,8 +45,10 @@ class QuizzierViewController: UIViewController {
         let actualAnswer = quiz[questionNumber].answer
         
         if userAnswer == actualAnswer {
+            sender.backgroundColor = .green
             print("Right!")
         } else {
+            sender.backgroundColor = .red
             print("Wrong")
         }
         
@@ -56,11 +58,13 @@ class QuizzierViewController: UIViewController {
             questionNumber = 0
         }
         
-        updateUI()
+        Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
-    private func updateUI() {
+    @objc private func updateUI() {
         questionLabel.text = quiz[questionNumber].question
+        truebutton.backgroundColor = .clear
+        falseButton.backgroundColor = .clear
     }
     
     private func makeTrueButton() {
