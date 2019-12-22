@@ -1,8 +1,15 @@
-# The Complete iOS App Development Bootcamp Course
+# iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp
 
-Прохожу курс [ссылка](https://www.udemy.com/course/ios-13-app-development-bootcamp/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Swift_v.PROF_la.EN_cc.ROW_ti.7956&utm_content=deal4584&utm_term=_._ag_81264461025_._ad_394028038225_._kw__._de_c_._dm__._pl__._ti_dsa-774930029729_._li_1001492_._pd__._&matchtype=b&gclid=Cj0KCQiA0NfvBRCVARIsAO4930mEnJVSuuVjcTRklx4ed-qzkRBVU_G5_eX0nDnTl7zAaH4pj4GfcyAaAjBSEALw_wcB)
+Прохожу курс от Angela Yu на [Udemy](https://www.udemy.com/course/ios-13-app-development-bootcamp/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Swift_v.PROF_la.EN_cc.ROW_ti.7956&utm_content=deal4584&utm_term=_._ag_81264461025_._ad_394028038225_._kw__._de_c_._dm__._pl__._ti_dsa-774930029729_._li_1001492_._pd__._&matchtype=b&gclid=Cj0KCQiA0NfvBRCVARIsAO4930mEnJVSuuVjcTRklx4ed-qzkRBVU_G5_eX0nDnTl7zAaH4pj4GfcyAaAjBSEALw_wcB)
 
 Swift 5, iOS 13.3, Xcode 11.3
+
+<b>Квиз</b>
+- При верном ответе увеличивается счет
+
+Видео: [ссылка](https://drive.google.com/open?id=1mxYPZ-T8L-jftfSUf6-vvcSpDJIGgQmz)
+
+<a href="https://ibb.co/YPVKcj2"><img src="https://i.ibb.co/TYNn4hc/Simulator-Screen-Shot-i-Phone-8-2019-12-22-at-12-31-01.png" width="200"></a>
 
 <b>Приготовление яиц</b>
 - Различное время приготовления яиц
