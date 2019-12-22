@@ -17,11 +17,18 @@ class DestinyViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        updateUI()
         configButtons()
     }
     
     @IBAction func choiceMade(_ sender: UIButton) {
-        print(#function)
+        print(sender.currentTitle!)
+    }
+    
+    private func updateUI() {
+        storyTextLabel.text = "You see a fork in the road."
+        choiceOneButton.setTitle("Take a left", for: .normal)
+        choiceTwoButton.setTitle("Take a right", for: .normal)
     }
     
     private func configButtons() {
