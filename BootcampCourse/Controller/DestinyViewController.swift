@@ -14,6 +14,8 @@ class DestinyViewController: UIViewController {
     @IBOutlet weak var choiceTwoButton: UIButton!
     @IBOutlet weak var storyTextLabel: UILabel!
     
+    var storyBrain = StoryBrain()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,13 +24,19 @@ class DestinyViewController: UIViewController {
     }
     
     @IBAction func choiceMade(_ sender: UIButton) {
-        print(sender.currentTitle!)
+        if storyBrain.storyNumber + 1 < storyBrain.getTotalStories() {
+            storyBrain.nextStory(userChoice: sender.currentTitle!)
+        } else {
+            storyBrain.storyNumber = 0
+        }
+        
+        updateUI()
     }
     
     private func updateUI() {
-        storyTextLabel.text = "You see a fork in the road."
-        choiceOneButton.setTitle("Take a left", for: .normal)
-        choiceTwoButton.setTitle("Take a right", for: .normal)
+        storyTextLabel.text = storyBrain.getStoryTitle()
+        choiceOneButton.setTitle(storyBrain.getChoiceOneButtonTitle(), for: .normal)
+        choiceTwoButton.setTitle(storyBrain.getChoiceTwoButtonTitle(), for: .normal)
     }
     
     private func configButtons() {
