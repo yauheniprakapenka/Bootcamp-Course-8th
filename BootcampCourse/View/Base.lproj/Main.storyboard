@@ -787,7 +787,7 @@
                                         <rect key="frame" x="0.0" y="281" width="414" height="280"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball3" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Yq-4EH">
-                                                <rect key="frame" x="54.5" y="20" width="305" height="240"/>
+                                                <rect key="frame" x="-98" y="20" width="610" height="240"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>

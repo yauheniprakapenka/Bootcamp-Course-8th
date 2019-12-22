@@ -28,18 +28,16 @@ struct StoryBrain {
         return stories[storyNumber].choice2
     }
     
-    func getTotalStories() -> Int {
-        return stories.count
-    }
-    
     mutating func nextStory(userChoice: String) {
-        switch userChoice {
-        case "Take a left":
-            self.storyNumber = 1
-        case "Take a right":
-            self.storyNumber = 2
-        default:
-            self.storyNumber = 0
+        if storyNumber < stories.count {
+            switch userChoice {
+            case "Take a left":
+                self.storyNumber = 1
+            case "Take a right":
+                self.storyNumber = 2
+            default:
+                self.storyNumber = 0
+            }
         }
     }
 }

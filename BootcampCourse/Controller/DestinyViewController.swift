@@ -24,12 +24,7 @@ class DestinyViewController: UIViewController {
     }
     
     @IBAction func choiceMade(_ sender: UIButton) {
-        if storyBrain.storyNumber + 1 < storyBrain.getTotalStories() {
-            storyBrain.nextStory(userChoice: sender.currentTitle!)
-        } else {
-            storyBrain.storyNumber = 0
-        }
-        
+        storyBrain.nextStory(userChoice: sender.currentTitle!)
         updateUI()
     }
     
@@ -43,5 +38,4 @@ class DestinyViewController: UIViewController {
         choiceOneButton.layer.cornerRadius = 20
         choiceTwoButton.layer.cornerRadius = 20
     }
-    
 }
