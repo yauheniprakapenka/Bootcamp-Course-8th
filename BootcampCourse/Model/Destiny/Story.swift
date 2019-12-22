@@ -18,4 +18,5 @@ struct Story {
         self.choice1 = choice1
         self.choice2 = choice2
     }
+    n
 }
