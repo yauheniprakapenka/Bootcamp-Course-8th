@@ -13,8 +13,9 @@ class QuizzierViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var progressView: UIProgressView!
-    @IBOutlet weak var truebutton: UIButton!
-    @IBOutlet weak var falseButton: UIButton!
+    @IBOutlet weak var buttonOne: UIButton!
+    @IBOutlet weak var buttonTwo: UIButton!
+    @IBOutlet weak var bottonThree: UIButton!
     
     var quizBrain = QuizBrain()
     
@@ -23,8 +24,9 @@ class QuizzierViewController: UIViewController {
         
         updateUI()
         
-        makeTrueButton()
-        makeFalseButton()
+        bottomOne()
+        buttomTwo()
+        bottomThree()
     }
     
     @IBAction func answerButtonTapped(_ sender: UIButton) {
@@ -43,21 +45,33 @@ class QuizzierViewController: UIViewController {
     
     @objc private func updateUI() {
         questionLabel.text = quizBrain.getQuestion()
+        
         progressView.setProgress(quizBrain.getProgress(), animated: true)
         scoreLabel.text = "Scores: \(quizBrain.getScore())"
-        truebutton.backgroundColor = .clear
-        falseButton.backgroundColor = .clear
+        
+        buttonOne.setTitle(quizBrain.setName(button: "One") , for: .normal)
+        buttonTwo.setTitle(quizBrain.setName(button: "Two"), for: .normal)
+        bottonThree.setTitle(quizBrain.setName(button: "Three"), for: .normal)
+        buttonOne.backgroundColor = .clear
+        buttonTwo.backgroundColor = .clear
+        bottonThree.backgroundColor = .clear
     }
     
-    private func makeTrueButton() {
-        truebutton.layer.borderWidth = 4
-        truebutton.layer.borderColor = #colorLiteral(red: 0.2472991943, green: 0.3869664967, blue: 0.5797886252, alpha: 1)
-        truebutton.layer.cornerRadius = 20
+    private func bottomOne() {
+        buttonOne.layer.borderWidth = 4
+        buttonOne.layer.borderColor = #colorLiteral(red: 0.2472991943, green: 0.3869664967, blue: 0.5797886252, alpha: 1)
+        buttonOne.layer.cornerRadius = 20
     }
     
-    private func makeFalseButton() {
-        falseButton.layer.borderWidth = 4
-        falseButton.layer.borderColor = #colorLiteral(red: 0.2472991943, green: 0.3869664967, blue: 0.5797886252, alpha: 1)
-        falseButton.layer.cornerRadius = 20
+    private func buttomTwo() {
+        buttonTwo.layer.borderWidth = 4
+        buttonTwo.layer.borderColor = #colorLiteral(red: 0.2472991943, green: 0.3869664967, blue: 0.5797886252, alpha: 1)
+        buttonTwo.layer.cornerRadius = 20
+    }
+    
+    private func bottomThree() {
+        bottonThree.layer.borderWidth = 4
+        bottonThree.layer.borderColor = #colorLiteral(red: 0.2472991943, green: 0.3869664967, blue: 0.5797886252, alpha: 1)
+        bottonThree.layer.cornerRadius = 20
     }
 }

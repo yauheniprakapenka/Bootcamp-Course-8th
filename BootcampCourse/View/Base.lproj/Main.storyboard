@@ -110,7 +110,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UQ0-hP-a2j">
-                                                <rect key="frame" x="11" y="30" width="392" height="212"/>
+                                                <rect key="frame" x="109" y="30" width="196.00000000000006" height="212"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -123,13 +123,13 @@
                                         <rect key="frame" x="0.0" y="273" width="414" height="272"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="OeV-KT-J9E">
-                                                <rect key="frame" x="-23" y="36" width="460" height="200"/>
+                                                <rect key="frame" x="77" y="86" width="260" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-xt-j6M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-hn-Det">
-                                                        <rect key="frame" x="260" y="0.0" width="200" height="200"/>
+                                                        <rect key="frame" x="160" y="0.0" width="100" height="100"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -565,19 +565,19 @@
                                     <constraint firstAttribute="height" constant="140" id="keY-Yt-zjV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-h7-uTU">
-                                <rect key="frame" x="20" y="84" width="374" height="564"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dbq-h7-uTU">
+                                <rect key="frame" x="20" y="84" width="374" height="456"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyd-ji-Z4f">
-                                <rect key="frame" x="20" y="656" width="374" height="80"/>
+                                <rect key="frame" x="20" y="631" width="374" height="80"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="vvV-TF-AcY"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="True">
+                                <state key="normal" title="Button 2">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -598,7 +598,7 @@
                                     <constraint firstAttribute="height" constant="80" id="o5q-no-PJG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                <state key="normal" title="False">
+                                <state key="normal" title="Button 3">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
@@ -614,11 +614,25 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DlR-lm-Zmf">
+                                <rect key="frame" x="20" y="550" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="fEM-kt-ZGY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Button 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="answerButtonTapped:" destination="094-2s-yBB" eventType="touchUpInside" id="E3l-aF-ufb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.19417384269999999" green="0.22761914129999999" blue="0.36079943180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="tyd-ji-Z4f" firstAttribute="top" secondItem="Dbq-h7-uTU" secondAttribute="bottom" constant="8" symbolic="YES" id="ALg-0W-Cth"/>
+                            <constraint firstItem="DlR-lm-Zmf" firstAttribute="leading" secondItem="ULp-nC-WdA" secondAttribute="leading" constant="20" id="B9r-xD-YsT"/>
                             <constraint firstItem="j3b-az-Zvh" firstAttribute="top" secondItem="eVY-YR-aEH" secondAttribute="bottom" constant="35" id="BUA-d0-GG0"/>
+                            <constraint firstItem="eVY-YR-aEH" firstAttribute="top" secondItem="tyd-ji-Z4f" secondAttribute="bottom" constant="1" id="HwX-QS-HGV"/>
                             <constraint firstItem="Dbq-h7-uTU" firstAttribute="leading" secondItem="ULp-nC-WdA" secondAttribute="leading" constant="20" id="J89-xh-DDA"/>
                             <constraint firstItem="ejP-kH-DlN" firstAttribute="trailing" secondItem="ULp-nC-WdA" secondAttribute="trailing" id="PbX-Ea-w43"/>
                             <constraint firstItem="mdQ-ij-VhO" firstAttribute="top" secondItem="ULp-nC-WdA" secondAttribute="top" id="SNO-sU-os0"/>
@@ -626,14 +640,16 @@
                             <constraint firstItem="mdQ-ij-VhO" firstAttribute="trailing" secondItem="ULp-nC-WdA" secondAttribute="trailing" id="Vtq-Fc-car"/>
                             <constraint firstItem="eVY-YR-aEH" firstAttribute="leading" secondItem="ULp-nC-WdA" secondAttribute="leading" constant="20" id="WFy-N0-9sA"/>
                             <constraint firstItem="mdQ-ij-VhO" firstAttribute="leading" secondItem="ULp-nC-WdA" secondAttribute="leading" constant="20" id="abn-mu-Lav"/>
-                            <constraint firstItem="ejP-kH-DlN" firstAttribute="top" secondItem="tyd-ji-Z4f" secondAttribute="bottom" constant="20" id="b42-Rq-MbM"/>
                             <constraint firstItem="ULp-nC-WdA" firstAttribute="bottom" secondItem="j3b-az-Zvh" secondAttribute="bottom" constant="30" id="c4d-P9-Z3u"/>
                             <constraint firstItem="Dbq-h7-uTU" firstAttribute="top" secondItem="mdQ-ij-VhO" secondAttribute="bottom" id="eV9-QW-RJx"/>
                             <constraint firstItem="ejP-kH-DlN" firstAttribute="leading" secondItem="ULp-nC-WdA" secondAttribute="leading" id="eoS-uL-nv5"/>
+                            <constraint firstItem="DlR-lm-Zmf" firstAttribute="top" secondItem="Dbq-h7-uTU" secondAttribute="bottom" constant="10" id="fGd-VR-GE1"/>
+                            <constraint firstItem="ULp-nC-WdA" firstAttribute="trailing" secondItem="DlR-lm-Zmf" secondAttribute="trailing" constant="20" id="hqK-Gv-xay"/>
                             <constraint firstItem="tyd-ji-Z4f" firstAttribute="leading" secondItem="ULp-nC-WdA" secondAttribute="leading" constant="20" id="iev-Fg-6lQ"/>
                             <constraint firstAttribute="bottom" secondItem="ejP-kH-DlN" secondAttribute="bottom" id="kJi-FA-zWm"/>
                             <constraint firstItem="ULp-nC-WdA" firstAttribute="trailing" secondItem="tyd-ji-Z4f" secondAttribute="trailing" constant="20" id="no1-Ok-7cz"/>
                             <constraint firstAttribute="trailing" secondItem="j3b-az-Zvh" secondAttribute="trailing" constant="20" id="oo5-Fw-NtN"/>
+                            <constraint firstItem="tyd-ji-Z4f" firstAttribute="top" secondItem="DlR-lm-Zmf" secondAttribute="bottom" constant="1" id="qbq-pp-l6L"/>
                             <constraint firstItem="mdQ-ij-VhO" firstAttribute="top" secondItem="ULp-nC-WdA" secondAttribute="top" id="r8c-IH-Yft"/>
                             <constraint firstItem="ULp-nC-WdA" firstAttribute="trailing" secondItem="eVY-YR-aEH" secondAttribute="trailing" constant="20" id="sVz-NN-9C1"/>
                             <constraint firstItem="j3b-az-Zvh" firstAttribute="leading" secondItem="3kI-jz-twS" secondAttribute="leading" constant="20" id="xYy-ee-k0u"/>
@@ -641,11 +657,12 @@
                         <viewLayoutGuide key="safeArea" id="ULp-nC-WdA"/>
                     </view>
                     <connections>
-                        <outlet property="falseButton" destination="eVY-YR-aEH" id="SgQ-lK-gS7"/>
+                        <outlet property="bottonThree" destination="eVY-YR-aEH" id="SgQ-lK-gS7"/>
+                        <outlet property="buttonOne" destination="DlR-lm-Zmf" id="msK-nD-Spj"/>
+                        <outlet property="buttonTwo" destination="tyd-ji-Z4f" id="pcO-j4-cSU"/>
                         <outlet property="progressView" destination="j3b-az-Zvh" id="5ac-jF-nic"/>
                         <outlet property="questionLabel" destination="Dbq-h7-uTU" id="115-Ab-mkZ"/>
                         <outlet property="scoreLabel" destination="mdQ-ij-VhO" id="7gf-3f-dHn"/>
-                        <outlet property="truebutton" destination="tyd-ji-Z4f" id="pcO-j4-cSU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b34-Zh-xv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
