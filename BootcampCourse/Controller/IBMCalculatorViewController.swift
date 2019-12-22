@@ -12,6 +12,8 @@ class IBMCalculatorViewController: UIViewController {
     
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
+    @IBOutlet weak var heightSlider: UISlider!
+    @IBOutlet weak var weighrSlider: UISlider!
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         let height = String(format: "%.2f", sender.value)
@@ -21,6 +23,10 @@ class IBMCalculatorViewController: UIViewController {
     @IBAction func weightSliderChanged(_ sender: UISlider) {
         let weight = Int(sender.value)
         weightLabel.text = "\(weight) kg"
+    }
+    
+    @IBAction func CaclulateButtonTapped(_ sender: UIButton) {
+        print(weighrSlider.value / pow(heightSlider.value, 2) )
     }
     
 }
