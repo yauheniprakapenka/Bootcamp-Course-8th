@@ -10,7 +10,8 @@
 		3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */; };
 		3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */; };
 		3E0A97D623AE0EE100B6B598 /* Background-Bubbles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */; };
-		3E0A97D823AE50E600B6B598 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D723AE50E600B6B598 /* Question.swift */; };
+		3E0A97D823AE50E600B6B598 /* QuizQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D723AE50E600B6B598 /* QuizQuestion.swift */; };
+		3E0A97DB23AF43DA00B6B598 /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97DA23AF43DA00B6B598 /* QuizBrain.swift */; };
 		3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */; };
 		3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */; };
 		3E7AD2C623AA7681007BAF26 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BF23AA7681007BAF26 /* F.wav */; };
@@ -36,7 +37,8 @@
 		3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzierViewController.swift; sourceTree = "<group>"; };
 		3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@3x.png"; sourceTree = "<group>"; };
 		3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@2x.png"; sourceTree = "<group>"; };
-		3E0A97D723AE50E600B6B598 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		3E0A97D723AE50E600B6B598 /* QuizQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestion.swift; sourceTree = "<group>"; };
+		3E0A97DA23AF43DA00B6B598 /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 		3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BF23AA7681007BAF26 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
@@ -80,6 +82,15 @@
 			path = Quizzier;
 			sourceTree = "<group>";
 		};
+		3E0A97D923AF406000B6B598 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3E0A97D723AE50E600B6B598 /* QuizQuestion.swift */,
+				3E0A97DA23AF43DA00B6B598 /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		3E7AD2BE23AA766B007BAF26 /* Xylophone */ = {
 			isa = PBXGroup;
 			children = (
@@ -94,7 +105,7 @@
 			path = Xylophone;
 			sourceTree = "<group>";
 		};
-		3EC583B823A6C6AF00175E01 /* Controllers */ = {
+		3EC583B823A6C6AF00175E01 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
@@ -104,9 +115,8 @@
 				3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */,
 				3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */,
 				3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */,
-				3E0A97D723AE50E600B6B598 /* Question.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		3EC583B923A6C6C600175E01 /* SupportFile */ = {
@@ -159,8 +169,9 @@
 		3EEFFCE623A69F72003545D7 /* BootcampCourse */ = {
 			isa = PBXGroup;
 			children = (
-				3EC583B823A6C6AF00175E01 /* Controllers */,
+				3E0A97D923AF406000B6B598 /* Model */,
 				3EC583BA23A6C6D500175E01 /* View */,
+				3EC583B823A6C6AF00175E01 /* Controller */,
 				3EC583B923A6C6C600175E01 /* SupportFile */,
 			);
 			path = BootcampCourse;
@@ -252,7 +263,8 @@
 				3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */,
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
-				3E0A97D823AE50E600B6B598 /* Question.swift in Sources */,
+				3E0A97DB23AF43DA00B6B598 /* QuizBrain.swift in Sources */,
+				3E0A97D823AE50E600B6B598 /* QuizQuestion.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
 				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
