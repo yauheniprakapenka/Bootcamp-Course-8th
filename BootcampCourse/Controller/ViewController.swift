@@ -34,6 +34,9 @@ class ViewController: UIViewController {
         presentVC(identifier: "quizzierVCID")
     }
     
+    @IBAction func destinyButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "DestinyVCID")
+    }
     
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
