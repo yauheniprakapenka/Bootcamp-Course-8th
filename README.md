@@ -4,8 +4,15 @@
 
 Swift 5, iOS 13.3, Xcode 11.3
 
+<b>История</b>
+- Выбор влияет на историю
+
+Видео: [ссылка](https://drive.google.com/open?id=1zIiVikJ0gb_dh0GDof2Fl5Cc_Uw7ugYC)
+
+<a href="https://ibb.co/0rW0S9K"><img src="https://i.ibb.co/QMqWRHk/Story.png" width="200"></a>
+
 <b>Квиз</b>
-- При верном ответе увеличивается счет
+- При верном ответе на вопрос увеличивается счет
 
 Видео: [ссылка](https://drive.google.com/open?id=1mxYPZ-T8L-jftfSUf6-vvcSpDJIGgQmz)
 

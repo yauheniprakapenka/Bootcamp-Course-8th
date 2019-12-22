@@ -67,6 +67,13 @@
                                     <action selector="quizzierButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lug-aN-BsX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2Z-B4-zig">
+                                <rect key="frame" x="31" y="327" width="52" height="30"/>
+                                <state key="normal" title="Destiny"/>
+                                <connections>
+                                    <action selector="destinyButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Us0-qp-PQZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94747704267501831" green="0.927440345287323" blue="0.77656263113021851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -81,7 +88,9 @@
                             <constraint firstItem="VZR-i9-Gn6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="UOq-a9-WWa"/>
                             <constraint firstItem="S7A-CD-X5t" firstAttribute="top" secondItem="52a-7a-ciW" secondAttribute="bottom" constant="40" id="Xbf-Ht-2zE"/>
                             <constraint firstItem="52a-7a-ciW" firstAttribute="top" secondItem="rUV-8Z-02N" secondAttribute="bottom" constant="40" id="df2-Hk-rlp"/>
+                            <constraint firstItem="p2Z-B4-zig" firstAttribute="top" secondItem="PTT-kO-ItE" secondAttribute="bottom" constant="40" id="gtr-eB-2s2"/>
                             <constraint firstItem="Xxh-cz-DvS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kzi-Ho-Xnt"/>
+                            <constraint firstItem="p2Z-B4-zig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="oAJ-qa-DZ1"/>
                             <constraint firstItem="rUV-8Z-02N" firstAttribute="top" secondItem="VZR-i9-Gn6" secondAttribute="bottom" constant="40" id="sYN-6A-TXt"/>
                             <constraint firstItem="S7A-CD-X5t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wm7-sg-hau"/>
                         </constraints>
@@ -90,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="21" y="489"/>
+            <point key="canvasLocation" x="164" y="467"/>
         </scene>
         <!--Dices View Controller-->
         <scene sceneID="7Ha-Wn-rJH">
@@ -110,7 +119,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UQ0-hP-a2j">
-                                                <rect key="frame" x="109" y="30" width="196.00000000000006" height="212"/>
+                                                <rect key="frame" x="11" y="30" width="392" height="212"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -123,13 +132,13 @@
                                         <rect key="frame" x="0.0" y="273" width="414" height="272"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="OeV-KT-J9E">
-                                                <rect key="frame" x="77" y="86" width="260" height="100"/>
+                                                <rect key="frame" x="-23" y="36" width="460" height="200"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-xt-j6M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-hn-Det">
-                                                        <rect key="frame" x="160" y="0.0" width="100" height="100"/>
+                                                        <rect key="frame" x="260" y="0.0" width="200" height="200"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -383,7 +392,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zg1-4X-PZZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1098.4000000000001" y="826.23688155922048"/>
+            <point key="canvasLocation" x="3259" y="133"/>
         </scene>
         <!--Eggs View Controller-->
         <scene sceneID="slZ-8j-Ofa">
@@ -549,7 +558,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8bI-gE-Cij" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1801.449275362319" y="831.02678571428567"/>
+            <point key="canvasLocation" x="1099" y="825"/>
         </scene>
         <!--Quizzier View Controller-->
         <scene sceneID="lm6-hv-CD0">
@@ -667,7 +676,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b34-Zh-xv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2515.9420289855075" y="825"/>
+            <point key="canvasLocation" x="1793" y="825"/>
+        </scene>
+        <!--Destiny View Controller-->
+        <scene sceneID="L8t-dW-9Kd">
+            <objects>
+                <viewController storyboardIdentifier="DestinyVCID" id="LW3-8v-uF0" customClass="DestinyViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbh-3n-fBi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iAJ-sq-aSg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKw-sj-LAG">
+                                <rect key="frame" x="20" y="742" width="374" height="80"/>
+                                <color key="backgroundColor" red="0.53827685120000002" green="0.3512418866" blue="0.6510084867" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Lto-3b-QMB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Choice 2">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="LW3-8v-uF0" eventType="touchUpInside" id="QiZ-7k-QO2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AcM-JX-JxU">
+                                <rect key="frame" x="20" y="642" width="374" height="80"/>
+                                <color key="backgroundColor" red="0.72354370359999998" green="0.25193551180000001" blue="0.38039439920000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="1CH-yo-gWN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Choice 1">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="choiceMade:" destination="LW3-8v-uF0" eventType="touchUpInside" id="lJI-Ih-lxY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Story Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5JR-Mg-LMP">
+                                <rect key="frame" x="20" y="44" width="374" height="578"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="iAJ-sq-aSg" firstAttribute="leading" secondItem="jbh-3n-fBi" secondAttribute="leading" id="CO1-Ss-rF6"/>
+                            <constraint firstItem="AcM-JX-JxU" firstAttribute="leading" secondItem="jgM-AT-006" secondAttribute="leading" constant="20" id="Gle-ex-FlD"/>
+                            <constraint firstItem="iAJ-sq-aSg" firstAttribute="top" secondItem="jbh-3n-fBi" secondAttribute="top" id="Hoe-Ex-u1g"/>
+                            <constraint firstItem="jgM-AT-006" firstAttribute="trailing" secondItem="AcM-JX-JxU" secondAttribute="trailing" constant="20" id="NJJ-2F-FyD"/>
+                            <constraint firstAttribute="trailing" secondItem="iAJ-sq-aSg" secondAttribute="trailing" id="PvJ-tV-Rh7"/>
+                            <constraint firstItem="FKw-sj-LAG" firstAttribute="leading" secondItem="jgM-AT-006" secondAttribute="leading" constant="20" id="TD0-J0-VnU"/>
+                            <constraint firstAttribute="bottom" secondItem="iAJ-sq-aSg" secondAttribute="bottom" id="aTU-g4-8JG"/>
+                            <constraint firstItem="5JR-Mg-LMP" firstAttribute="leading" secondItem="jgM-AT-006" secondAttribute="leading" constant="20" id="d71-nb-vQz"/>
+                            <constraint firstItem="jgM-AT-006" firstAttribute="bottom" secondItem="FKw-sj-LAG" secondAttribute="bottom" constant="40" id="fXp-So-w7d"/>
+                            <constraint firstItem="jgM-AT-006" firstAttribute="trailing" secondItem="5JR-Mg-LMP" secondAttribute="trailing" constant="20" id="o06-de-Ca2"/>
+                            <constraint firstItem="AcM-JX-JxU" firstAttribute="top" secondItem="5JR-Mg-LMP" secondAttribute="bottom" constant="20" id="ug7-aV-He8"/>
+                            <constraint firstItem="5JR-Mg-LMP" firstAttribute="top" secondItem="jgM-AT-006" secondAttribute="top" id="wYg-Oa-SS2"/>
+                            <constraint firstItem="jgM-AT-006" firstAttribute="trailing" secondItem="FKw-sj-LAG" secondAttribute="trailing" constant="20" id="y0c-kO-EHK"/>
+                            <constraint firstItem="FKw-sj-LAG" firstAttribute="top" secondItem="AcM-JX-JxU" secondAttribute="bottom" constant="20" id="zs0-Pd-hGw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jgM-AT-006"/>
+                    </view>
+                    <connections>
+                        <outlet property="choiceOneButton" destination="AcM-JX-JxU" id="NwY-nj-pc6"/>
+                        <outlet property="choiceTwoButton" destination="FKw-sj-LAG" id="cki-6c-VZe"/>
+                        <outlet property="storyTextLabel" destination="5JR-Mg-LMP" id="jTS-vm-UOr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ze-7G-iAv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2504" y="825"/>
         </scene>
         <!--Magic Ball View Controller-->
         <scene sceneID="S81-nR-gUK">
@@ -703,7 +787,7 @@
                                         <rect key="frame" x="0.0" y="281" width="414" height="280"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball3" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Yq-4EH">
-                                                <rect key="frame" x="54.5" y="20" width="305" height="240"/>
+                                                <rect key="frame" x="-98" y="20" width="610" height="240"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -1223,6 +1307,7 @@
     </scenes>
     <resources>
         <image name="Background-Bubbles.png" width="352" height="102"/>
+        <image name="background" width="958" height="1793"/>
         <image name="backgroundBlue" width="444.5" height="414"/>
         <image name="backgroundGreen" width="444.5" height="414"/>
         <image name="ball3" width="305" height="273.5"/>
