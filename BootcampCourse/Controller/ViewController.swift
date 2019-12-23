@@ -42,6 +42,10 @@ class ViewController: UIViewController {
         presentVC(identifier: "IBMCalculatorVCID")
     }
     
+    @IBAction func tipsyButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "TipsyVCID")
+    }
+    
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
