@@ -38,6 +38,10 @@ class ViewController: UIViewController {
         presentVC(identifier: "DestinyVCID")
     }
     
+    @IBAction func ibmButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "IBMCalculatorVCID")
+    }
+    
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
