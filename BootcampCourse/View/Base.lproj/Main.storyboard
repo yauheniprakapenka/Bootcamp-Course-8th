@@ -691,8 +691,8 @@
                     <connections>
                         <outlet property="heightLabel" destination="ttM-Jg-5rY" id="d5W-3g-TnI"/>
                         <outlet property="heightSlider" destination="lXH-4h-QXV" id="VT9-Li-794"/>
-                        <outlet property="weighrSlider" destination="HSD-j1-TwM" id="O9E-PI-D4f"/>
                         <outlet property="weightLabel" destination="j0a-mx-P28" id="Rnb-Ab-yPd"/>
+                        <outlet property="weightSlider" destination="HSD-j1-TwM" id="O9E-PI-D4f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EE3-4Z-coR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
