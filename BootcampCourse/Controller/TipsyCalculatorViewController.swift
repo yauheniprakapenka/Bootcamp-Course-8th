@@ -14,9 +14,10 @@ class TipsyCalculatorViewController: UIViewController {
     @IBOutlet weak var zeroPctButton: UIButton!
     @IBOutlet weak var tenPctButton: UIButton!
     @IBOutlet weak var twentyPctButton: UIButton!
-    @IBOutlet weak var splitNumberLabel: UILabel!
+    @IBOutlet weak var numberOfPersonLabel: UILabel!
     
     private var tipPercentage = ""
+    private var tipsyBrain = TipsyBrain()
     
     @IBAction func tipChanged(_ sender: UIButton) {
         let buttons = [zeroPctButton, tenPctButton, twentyPctButton]
@@ -34,7 +35,7 @@ class TipsyCalculatorViewController: UIViewController {
     }
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
-        splitNumberLabel.text = Int(sender.value).description
+        numberOfPersonLabel.text = Int(sender.value).description
     }
     
     @IBAction func calculateTapped(_ sender: UIButton) {
@@ -43,15 +44,7 @@ class TipsyCalculatorViewController: UIViewController {
             return
         }
         
-        let totalBill = Double(billTextField.text!)
-        let percent = Double(tipPercentage.dropLast())
-        let splitNumber = Double(splitNumberLabel.text!)
-        
-        let forOnePerson = Double(totalBill! / splitNumber!)
-        let tip = forOnePerson * (percent! / 100)
-        let totalForOnePerson = forOnePerson + tip
-        
-        print(String(format: "%.2f", totalForOnePerson))
+        let result = tipsyBrain.getBillForOnePerson(totalBill: billTextField.text ?? "", percent: String(tipPercentage.dropLast()), numberOfPerson: numberOfPersonLabel.text!)
     }
     
 }

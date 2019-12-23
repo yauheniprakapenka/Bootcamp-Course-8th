@@ -33,6 +33,8 @@
 		3EE5F03823AD0B2100DBFAC6 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */; };
 		3EEFB57923B10B54000A71E4 /* TipsyCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57823B10B54000A71E4 /* TipsyCalculatorViewController.swift */; };
 		3EEFB57B23B1314C000A71E4 /* TipsyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */; };
+		3EEFB57E23B15303000A71E4 /* TipsyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57D23B15303000A71E4 /* TipsyModel.swift */; };
+		3EEFB58023B1536B000A71E4 /* TipsyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57F23B1536B000A71E4 /* TipsyBrain.swift */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
 		3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */; };
 		3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCEB23A69F72003545D7 /* ViewController.swift */; };
@@ -69,6 +71,8 @@
 		3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		3EEFB57823B10B54000A71E4 /* TipsyCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyCalculatorViewController.swift; sourceTree = "<group>"; };
 		3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyResultViewController.swift; sourceTree = "<group>"; };
+		3EEFB57D23B15303000A71E4 /* TipsyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyModel.swift; sourceTree = "<group>"; };
+		3EEFB57F23B1536B000A71E4 /* TipsyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyBrain.swift; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFFCE723A69F72003545D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +107,7 @@
 		3E0A97D923AF406000B6B598 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3EEFB57C23B152ED000A71E4 /* Tipsy */,
 				3EC6DDCC23B0CF3B00AED77F /* BMI */,
 				3E0A97DE23AF7D3F00B6B598 /* Quiz */,
 				3E0A97DF23AF7D5500B6B598 /* Destiny */,
@@ -199,6 +204,15 @@
 				3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */,
 			);
 			path = Eggs;
+			sourceTree = "<group>";
+		};
+		3EEFB57C23B152ED000A71E4 /* Tipsy */ = {
+			isa = PBXGroup;
+			children = (
+				3EEFB57D23B15303000A71E4 /* TipsyModel.swift */,
+				3EEFB57F23B1536B000A71E4 /* TipsyBrain.swift */,
+			);
+			path = Tipsy;
 			sourceTree = "<group>";
 		};
 		3EEFFCDB23A69F72003545D7 = {
@@ -311,6 +325,7 @@
 			files = (
 				3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */,
 				3E0A97DD23AF779000B6B598 /* DestinyViewController.swift in Sources */,
+				3EEFB58023B1536B000A71E4 /* TipsyBrain.swift in Sources */,
 				3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */,
 				3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */,
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
@@ -323,6 +338,7 @@
 				3E0A97D823AE50E600B6B598 /* QuestionModel.swift in Sources */,
 				3E0A97E123AF7D6C00B6B598 /* StoryModel.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
+				3EEFB57E23B15303000A71E4 /* TipsyModel.swift in Sources */,
 				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
 				3EEFB57923B10B54000A71E4 /* TipsyCalculatorViewController.swift in Sources */,

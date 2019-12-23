@@ -10,10 +10,22 @@ import UIKit
 
 class TipsyResultViewController: UIViewController {
     
-    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var totalBillforOnePersonLabel: UILabel!
     @IBOutlet weak var settingLabel: UILabel!
     
+    var totalBillForOnePerson = ""
+    var percent = ""
+    var numberOfPerson = ""
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        totalBillforOnePersonLabel.text = totalBillForOnePerson
+        settingLabel.text = "Split between \(numberOfPerson) people, with \(percent)% tip"
+    }
+    
     @IBAction func recalculateButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
     }
     
 }
