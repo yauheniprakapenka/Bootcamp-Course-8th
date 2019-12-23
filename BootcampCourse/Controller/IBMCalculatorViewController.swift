@@ -25,8 +25,12 @@ class IBMCalculatorViewController: UIViewController {
         weightLabel.text = "\(weight) kg"
     }
     
-    @IBAction func CaclulateButtonTapped(_ sender: UIButton) {
-        print(weightSlider.value / pow(heightSlider.value, 2) )
+    @IBAction func caclulateButtonTapped(_ sender: UIButton) {
+        let result = weightSlider.value / pow(heightSlider.value, 2)
+        
+        let vc = IBMResultViewController()
+        vc.bmiValue = String(format: "%.1f", result)
+        present(vc, animated: true)
     }
     
 }

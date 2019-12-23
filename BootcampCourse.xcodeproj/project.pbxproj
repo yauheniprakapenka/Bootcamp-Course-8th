@@ -26,6 +26,7 @@
 		3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C523AA7681007BAF26 /* A.wav */; };
 		3EC4F77623AFB06F00B13975 /* IBMCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4F77523AFB06F00B13975 /* IBMCalculatorViewController.swift */; };
 		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
+		3EC6DDCB23B0AC3E00AED77F /* IBMResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6DDCA23B0AC3E00AED77F /* IBMResultViewController.swift */; };
 		3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */; };
 		3EE5F03823AD0B2100DBFAC6 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
@@ -57,6 +58,7 @@
 		3E7AD2C523AA7681007BAF26 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
 		3EC4F77523AFB06F00B13975 /* IBMCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMCalculatorViewController.swift; sourceTree = "<group>"; };
 		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
+		3EC6DDCA23B0AC3E00AED77F /* IBMResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBMResultViewController.swift; sourceTree = "<group>"; };
 		3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsViewController.swift; sourceTree = "<group>"; };
 		3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +145,7 @@
 				3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */,
 				3E0A97DC23AF779000B6B598 /* DestinyViewController.swift */,
 				3EC4F77523AFB06F00B13975 /* IBMCalculatorViewController.swift */,
+				3EC6DDCA23B0AC3E00AED77F /* IBMResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
 				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
+				3EC6DDCB23B0AC3E00AED77F /* IBMResultViewController.swift in Sources */,
 				3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
