@@ -4,6 +4,15 @@
 
 Swift 5, iOS 13.3, Xcode 11.3
 
+<b>Чаевые</b>
+- Калькулятор чаевых
+  
+Видео: [ссылка](https://drive.google.com/open?id=1NtIiCnpAVZn92jvWTc8mPPo6RS3fGxOn)
+
+<a href="https://ibb.co/VN70gz0"><img src="https://i.ibb.co/RSxG3sG/Simulator-Screen-Shot-i-Phone-8-2019-12-24-at-00-15-04.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-24-at-00-15-04" width="200"></a>
+<a href="https://ibb.co/2qtnWrj"><img src="https://i.ibb.co/5T8MG35/Simulator-Screen-Shot-i-Phone-8-2019-12-24-at-00-15-25.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-24-at-00-15-25" width="200"></a>
+<a href="https://ibb.co/NF4GfyQ"><img src="https://i.ibb.co/HKJ9RH1/Simulator-Screen-Shot-i-Phone-8-2019-12-24-at-00-15-38.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-24-at-00-15-38" width="200"></a>
+
 <b>Индекс массы тела</b>
 - Калькулятор массы тела
 
@@ -12,9 +21,6 @@ Swift 5, iOS 13.3, Xcode 11.3
 <a href="https://ibb.co/Pskh3gp"><img src="https://i.ibb.co/Gfm2BRw/Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-08.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-08" width="200"></a>
 <a href="https://ibb.co/6YMSm60"><img src="https://i.ibb.co/Q9gVfsv/Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-06.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-06" width="200"></a>
 <a href="https://ibb.co/tDTbHzw"><img src="https://i.ibb.co/7KdGSQx/Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-16.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-16" width="200"></a>
-
-
-
 
 <b>История</b>
 - Выбор влияет на историю
