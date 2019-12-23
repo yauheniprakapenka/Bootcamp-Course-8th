@@ -28,6 +28,7 @@
 		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
 		3EC6DDCB23B0AC3E00AED77F /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6DDCA23B0AC3E00AED77F /* BMIResultViewController.swift */; };
 		3EC6DDCE23B0CF5B00AED77F /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6DDCD23B0CF5B00AED77F /* CalculatorBrain.swift */; };
+		3EC6DDE323B0DE9C00AED77F /* BMIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6DDE223B0DE9C00AED77F /* BMIModel.swift */; };
 		3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */; };
 		3EE5F03823AD0B2100DBFAC6 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
@@ -61,6 +62,7 @@
 		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
 		3EC6DDCA23B0AC3E00AED77F /* BMIResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
 		3EC6DDCD23B0CF5B00AED77F /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		3EC6DDE223B0DE9C00AED77F /* BMIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIModel.swift; sourceTree = "<group>"; };
 		3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsViewController.swift; sourceTree = "<group>"; };
 		3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				3EC6DDCD23B0CF5B00AED77F /* CalculatorBrain.swift */,
+				3EC6DDE223B0DE9C00AED77F /* BMIModel.swift */,
 			);
 			path = BMI;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
 				3E0A97DB23AF43DA00B6B598 /* QuizBrain.swift in Sources */,
 				3EC4F77623AFB06F00B13975 /* BMICalculatorViewController.swift in Sources */,
+				3EC6DDE323B0DE9C00AED77F /* BMIModel.swift in Sources */,
 				3E0A97E323AF7F4D00B6B598 /* StoryBrain.swift in Sources */,
 				3E0A97D823AE50E600B6B598 /* QuestionModel.swift in Sources */,
 				3E0A97E123AF7D6C00B6B598 /* StoryModel.swift in Sources */,
