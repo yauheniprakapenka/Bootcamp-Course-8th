@@ -4,6 +4,18 @@
 
 Swift 5, iOS 13.3, Xcode 11.3
 
+<b>Индекс массы тела</b>
+- Калькулятор массы тела
+
+Видео: [ссылка](https://drive.google.com/open?id=1sAxaah6DdX_47Xte_5_5uK3445fx0x9q)
+
+<a href="https://ibb.co/Pskh3gp"><img src="https://i.ibb.co/Gfm2BRw/Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-08.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-08" width="200"></a>
+<a href="https://ibb.co/6YMSm60"><img src="https://i.ibb.co/Q9gVfsv/Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-06.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-06" width="200"></a>
+<a href="https://ibb.co/tDTbHzw"><img src="https://i.ibb.co/7KdGSQx/Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-16.png" alt="Simulator-Screen-Shot-i-Phone-8-2019-12-23-at-15-54-16" width="200"></a>
+
+
+
+
 <b>История</b>
 - Выбор влияет на историю
 
