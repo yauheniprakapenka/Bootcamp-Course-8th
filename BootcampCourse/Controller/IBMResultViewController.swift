@@ -10,17 +10,18 @@ import UIKit
 
 class IBMResultViewController: UIViewController {
     
-    var bmiValue = "0"
+    @IBOutlet weak var bmiLabel: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
+    
+    var bmiValue: Float?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .red
-        
-        let label = UILabel()
-        label.text = bmiValue
-        label.textColor = .white
-        label.frame = CGRect(x: 100, y: 100, width: 100, height: 50)
-        view.addSubview(label)
+        bmiLabel.text = String(format: "%.1f", bmiValue!)
+    }
+    
+    @IBAction func recalculateButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
     }
 }
