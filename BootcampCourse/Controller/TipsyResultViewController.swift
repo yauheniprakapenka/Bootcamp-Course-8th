@@ -14,8 +14,8 @@ class TipsyResultViewController: UIViewController {
     @IBOutlet weak var settingLabel: UILabel!
     
     var totalBillForOnePerson = ""
-    var percent = ""
-    var numberOfPerson = ""
+    var percent = 0
+    var numberOfPerson = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()

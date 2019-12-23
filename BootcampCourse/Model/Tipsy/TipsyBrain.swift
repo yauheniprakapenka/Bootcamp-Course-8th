@@ -21,17 +21,16 @@ struct TipsyBrain {
         let tip = billForOnePerson * (percent! / 100)
         let totalForOnePerson = billForOnePerson + tip
         
-        tipsyModel = TipsyModel(totalBillForOnePerson: String(billForOnePerson), numberOfPerson: String(splitNumber!), tipPersentage: String(tip))
+        tipsyModel = TipsyModel(totalBillForOnePerson: String(billForOnePerson), numberOfPerson: Int(splitNumber!), tipPersentage: Int(percent!))
         
-        print(totalForOnePerson)
         return String(format: "%.2f", totalForOnePerson)
     }
     
-    func getNumberOfPerson() -> String {
-        return tipsyModel?.numberOfPerson ?? ""
+    func getNumberOfPerson() -> Int {
+        return tipsyModel!.numberOfPerson
     }
     
-    func getTipPersentage() -> String {
-        return tipsyModel?.tipPersentage ?? ""
+    func getTipPersentage() -> Int {
+        return tipsyModel!.tipPersentage
     }
 }

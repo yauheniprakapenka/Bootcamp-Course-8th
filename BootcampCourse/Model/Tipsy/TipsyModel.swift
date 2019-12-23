@@ -10,6 +10,6 @@ import Foundation
 
 struct TipsyModel {
     var totalBillForOnePerson: String
-    var numberOfPerson: String
-    var tipPersentage: String
+    var numberOfPerson: Int
+    var tipPersentage: Int
 }

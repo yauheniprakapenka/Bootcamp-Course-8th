@@ -36,15 +36,27 @@ class TipsyCalculatorViewController: UIViewController {
     
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         numberOfPersonLabel.text = Int(sender.value).description
+        billTextField.endEditing(true)
     }
     
     @IBAction func calculateTapped(_ sender: UIButton) {
-        
         guard let bill = billTextField.text, bill != "" else {
             return
         }
         
-        let result = tipsyBrain.getBillForOnePerson(totalBill: billTextField.text ?? "", percent: String(tipPercentage.dropLast()), numberOfPerson: numberOfPersonLabel.text!)
+        performSegue(withIdentifier: "goToTipsyResultVC", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToTipsyResultVC" {
+            let destinationVC = segue.destination as! TipsyResultViewController
+            
+            let result = tipsyBrain.getBillForOnePerson(totalBill: billTextField.text ?? "", percent: String(tipPercentage.dropLast()), numberOfPerson: numberOfPersonLabel.text!)
+            
+            destinationVC.totalBillForOnePerson = result
+            destinationVC.percent = tipsyBrain.getTipPersentage()
+            destinationVC.numberOfPerson = tipsyBrain.getNumberOfPerson()
+        }
     }
     
 }
