@@ -76,7 +76,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lI3-WK-wsv">
                                 <rect key="frame" x="39" y="397" width="30" height="30"/>
-                                <state key="normal" title="IBM"/>
+                                <state key="normal" title="BMI"/>
                                 <connections>
                                     <action selector="ibmButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zbw-1N-9O6"/>
                                 </connections>
@@ -572,7 +572,7 @@
         <!--Calculator View Controller-->
         <scene sceneID="0kb-Nt-VYE">
             <objects>
-                <viewController storyboardIdentifier="IBMCalculatorVCID" id="f5W-4Q-viB" customClass="IBMCalculatorViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="IBMCalculatorVCID" id="f5W-4Q-viB" customClass="BMICalculatorViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tWF-sE-uBt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -703,7 +703,7 @@
         <!--Result View Controller-->
         <scene sceneID="z2T-xn-W05">
             <objects>
-                <viewController id="FDc-cx-jaQ" customClass="IBMResultViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FDc-cx-jaQ" customClass="BMIResultViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WmH-Eu-qDL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class IBMResultViewController: UIViewController {
+class BMIResultViewController: UIViewController {
     
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var adviceLabel: UILabel!

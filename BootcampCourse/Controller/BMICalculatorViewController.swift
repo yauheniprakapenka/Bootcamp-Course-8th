@@ -8,21 +8,14 @@
 
 import UIKit
 
-class IBMCalculatorViewController: UIViewController {
+class BMICalculatorViewController: UIViewController {
     
-    var bmiResult: Float = 0.0
+    var calculatorBrain = CalculatorBrain()
     
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToResult" {
-            let destinationVC = segue.destination as! IBMResultViewController
-            destinationVC.bmiValue = bmiResult
-        }
-    }
     
     @IBAction func heightSliderChanged(_ sender: UISlider) {
         let height = String(format: "%.2f", sender.value)
@@ -35,8 +28,13 @@ class IBMCalculatorViewController: UIViewController {
     }
     
     @IBAction func caclulateButtonTapped(_ sender: UIButton) {
-        bmiResult = weightSlider.value / pow(heightSlider.value, 2)
-        
         performSegue(withIdentifier: "goToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResult" {
+            let destinationVC = segue.destination as! BMIResultViewController
+            destinationVC.bmiValue = calculatorBrain.getBMIBalue(weight: weightSlider.value, height: heightSlider.value)
+        }
     }
 }
