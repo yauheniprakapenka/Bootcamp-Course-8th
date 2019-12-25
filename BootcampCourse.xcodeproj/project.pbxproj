@@ -17,6 +17,7 @@
 		3E0A97E323AF7F4D00B6B598 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97E223AF7F4D00B6B598 /* StoryBrain.swift */; };
 		3E557C4C23B3530700E23C58 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E557C4B23B3530700E23C58 /* WeatherManager.swift */; };
 		3E557C4E23B3955D00E23C58 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E557C4D23B3955D00E23C58 /* WeatherData.swift */; };
+		3E557C5623B3BEDC00E23C58 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E557C5523B3BEDC00E23C58 /* WeatherModel.swift */; };
 		3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */; };
 		3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */; };
 		3E7AD2C623AA7681007BAF26 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BF23AA7681007BAF26 /* F.wav */; };
@@ -58,6 +59,7 @@
 		3E0A97E223AF7F4D00B6B598 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 		3E557C4B23B3530700E23C58 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		3E557C4D23B3955D00E23C58 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		3E557C5523B3BEDC00E23C58 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BF23AA7681007BAF26 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			children = (
 				3E557C4B23B3530700E23C58 /* WeatherManager.swift */,
 				3E557C4D23B3955D00E23C58 /* WeatherData.swift */,
+				3E557C5523B3BEDC00E23C58 /* WeatherModel.swift */,
 			);
 			path = Climat;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
 				3E557C4C23B3530700E23C58 /* WeatherManager.swift in Sources */,
 				3EEFB57923B10B54000A71E4 /* TipsyCalculatorViewController.swift in Sources */,
+				3E557C5623B3BEDC00E23C58 /* WeatherModel.swift in Sources */,
 				3EC6DDCE23B0CF5B00AED77F /* CalculatorBrain.swift in Sources */,
 				3EC6DDCB23B0AC3E00AED77F /* BMIResultViewController.swift in Sources */,
 				3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */,
