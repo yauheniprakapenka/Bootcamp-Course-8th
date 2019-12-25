@@ -15,6 +15,7 @@
 		3E0A97DD23AF779000B6B598 /* DestinyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97DC23AF779000B6B598 /* DestinyViewController.swift */; };
 		3E0A97E123AF7D6C00B6B598 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97E023AF7D6C00B6B598 /* StoryModel.swift */; };
 		3E0A97E323AF7F4D00B6B598 /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97E223AF7F4D00B6B598 /* StoryBrain.swift */; };
+		3E557C4C23B3530700E23C58 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E557C4B23B3530700E23C58 /* WeatherManager.swift */; };
 		3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */; };
 		3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */; };
 		3E7AD2C623AA7681007BAF26 /* F.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2BF23AA7681007BAF26 /* F.wav */; };
@@ -54,6 +55,7 @@
 		3E0A97DC23AF779000B6B598 /* DestinyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyViewController.swift; sourceTree = "<group>"; };
 		3E0A97E023AF7D6C00B6B598 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
 		3E0A97E223AF7F4D00B6B598 /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
+		3E557C4B23B3530700E23C58 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		3E7AD2BA23AA552F007BAF26 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BC23AA7355007BAF26 /* XylophoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XylophoneViewController.swift; sourceTree = "<group>"; };
 		3E7AD2BF23AA7681007BAF26 /* F.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = F.wav; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 		3E0A97D923AF406000B6B598 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3E557C4A23B352F100E23C58 /* Climat */,
 				3EEFB57C23B152ED000A71E4 /* Tipsy */,
 				3EC6DDCC23B0CF3B00AED77F /* BMI */,
 				3E0A97DE23AF7D3F00B6B598 /* Quiz */,
@@ -133,6 +136,14 @@
 				3E0A97E223AF7F4D00B6B598 /* StoryBrain.swift */,
 			);
 			path = Destiny;
+			sourceTree = "<group>";
+		};
+		3E557C4A23B352F100E23C58 /* Climat */ = {
+			isa = PBXGroup;
+			children = (
+				3E557C4B23B3530700E23C58 /* WeatherManager.swift */,
+			);
+			path = Climat;
 			sourceTree = "<group>";
 		};
 		3E7AD2BE23AA766B007BAF26 /* Xylophone */ = {
@@ -344,6 +355,7 @@
 				3EEFB57E23B15303000A71E4 /* TipsyModel.swift in Sources */,
 				3E7AD2BB23AA552F007BAF26 /* CalculatorViewController.swift in Sources */,
 				3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */,
+				3E557C4C23B3530700E23C58 /* WeatherManager.swift in Sources */,
 				3EEFB57923B10B54000A71E4 /* TipsyCalculatorViewController.swift in Sources */,
 				3EC6DDCE23B0CF5B00AED77F /* CalculatorBrain.swift in Sources */,
 				3EC6DDCB23B0AC3E00AED77F /* BMIResultViewController.swift in Sources */,
