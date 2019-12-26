@@ -38,6 +38,15 @@ class WeatherViewController: UIViewController {
 //MARK: - UITextFieldDelegate
 
 extension WeatherViewController: UITextFieldDelegate {
+    @IBAction func searchButtonTapped(_ sender: UIButton) {
+        if let city = searchTextField.text {
+            weatherManager.fetchWeatherWithCity(city: city)
+        }
+        
+        searchTextField.endEditing(true)
+        searchTextField.text = ""
+    }
+    
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true)
