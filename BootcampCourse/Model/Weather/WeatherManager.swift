@@ -18,8 +18,9 @@ struct WeatherManager {
     
     var delegate: WeatherManagerDelegate?
     
-    func fetchWeather(cityName: String) {
-        let urlString = "\(weatherURL)&q=\(cityName)"
+    func fetchWeatherWithCity(city: String) {
+        let urlString = "\(weatherURL)&q=\(city)"
+        print(urlString)
         performRequest(urlString: urlString)
     }
     
@@ -68,5 +69,4 @@ struct WeatherManager {
             return nil
         }
     }
- 
 }
