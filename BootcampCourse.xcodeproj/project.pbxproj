@@ -115,7 +115,7 @@
 		3E0A97D923AF406000B6B598 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3E557C4A23B352F100E23C58 /* Climat */,
+				3E557C4A23B352F100E23C58 /* Weather */,
 				3EEFB57C23B152ED000A71E4 /* Tipsy */,
 				3EC6DDCC23B0CF3B00AED77F /* BMI */,
 				3E0A97DE23AF7D3F00B6B598 /* Quiz */,
@@ -142,14 +142,14 @@
 			path = Destiny;
 			sourceTree = "<group>";
 		};
-		3E557C4A23B352F100E23C58 /* Climat */ = {
+		3E557C4A23B352F100E23C58 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
 				3E557C4B23B3530700E23C58 /* WeatherManager.swift */,
 				3E557C4D23B3955D00E23C58 /* WeatherData.swift */,
 				3E557C5523B3BEDC00E23C58 /* WeatherModel.swift */,
 			);
-			path = Climat;
+			path = Weather;
 			sourceTree = "<group>";
 		};
 		3E7AD2BE23AA766B007BAF26 /* Xylophone */ = {
