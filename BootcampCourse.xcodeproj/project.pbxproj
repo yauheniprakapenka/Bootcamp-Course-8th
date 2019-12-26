@@ -38,7 +38,7 @@
 		3EEFB57B23B1314C000A71E4 /* TipsyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */; };
 		3EEFB57E23B15303000A71E4 /* TipsyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57D23B15303000A71E4 /* TipsyModel.swift */; };
 		3EEFB58023B1536B000A71E4 /* TipsyBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57F23B1536B000A71E4 /* TipsyBrain.swift */; };
-		3EEFB5BD23B21F3D000A71E4 /* ClimatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB5BC23B21F3D000A71E4 /* ClimatViewController.swift */; };
+		3EEFB5BD23B21F3D000A71E4 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB5BC23B21F3D000A71E4 /* WeatherViewController.swift */; };
 		3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE723A69F72003545D7 /* AppDelegate.swift */; };
 		3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */; };
 		3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFFCEB23A69F72003545D7 /* ViewController.swift */; };
@@ -80,7 +80,7 @@
 		3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyResultViewController.swift; sourceTree = "<group>"; };
 		3EEFB57D23B15303000A71E4 /* TipsyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyModel.swift; sourceTree = "<group>"; };
 		3EEFB57F23B1536B000A71E4 /* TipsyBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyBrain.swift; sourceTree = "<group>"; };
-		3EEFB5BC23B21F3D000A71E4 /* ClimatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClimatViewController.swift; sourceTree = "<group>"; };
+		3EEFB5BC23B21F3D000A71E4 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		3EEFFCE423A69F72003545D7 /* BootcampCourse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BootcampCourse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EEFFCE723A69F72003545D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -181,7 +181,7 @@
 				3EC6DDCA23B0AC3E00AED77F /* BMIResultViewController.swift */,
 				3EEFB57823B10B54000A71E4 /* TipsyCalculatorViewController.swift */,
 				3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */,
-				3EEFB5BC23B21F3D000A71E4 /* ClimatViewController.swift */,
+				3EEFB5BC23B21F3D000A71E4 /* WeatherViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,7 +368,7 @@
 				3EC6DDCE23B0CF5B00AED77F /* CalculatorBrain.swift in Sources */,
 				3EC6DDCB23B0AC3E00AED77F /* BMIResultViewController.swift in Sources */,
 				3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */,
-				3EEFB5BD23B21F3D000A71E4 /* ClimatViewController.swift in Sources */,
+				3EEFB5BD23B21F3D000A71E4 /* WeatherViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

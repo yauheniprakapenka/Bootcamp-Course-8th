@@ -1,5 +1,5 @@
 //
-//  ClimatViewController.swift
+//  WeatherViewController.swift
 //  BootcampCourse
 //
 //  Created by yauheni prakapenka on 24.12.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ClimatViewController: UIViewController, UITextFieldDelegate {
+class WeatherViewController: UIViewController, UITextFieldDelegate, WeatherManagerDelegate {
     
     @IBOutlet weak var conditionImageView: UIImageView!
     @IBOutlet weak var temperatureLabel: UILabel!
@@ -19,6 +19,8 @@ class ClimatViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        weatherManager.delegate = self
         
         searchTextField.delegate = self
     }
@@ -48,5 +50,9 @@ class ClimatViewController: UIViewController, UITextFieldDelegate {
             textField.placeholder = "Type something"
             return false
         }
+    }
+    
+    func didUpdateWeather(_ weatherManager: WeatherManager, weather: WeatherModel) {
+        print("\(weather.temperatureString)")
     }
 }
