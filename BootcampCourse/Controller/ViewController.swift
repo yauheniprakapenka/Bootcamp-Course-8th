@@ -46,6 +46,11 @@ class ViewController: UIViewController {
         presentVC(identifier: "TipsyVCID")
     }
     
+    @IBAction func weatherButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "WeatherVCID")
+    }
+    
+    
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
