@@ -4,6 +4,19 @@
 
 Swift 5, iOS 13.3, Xcode 11.3
 
+<b>Погода</b>
+- Поиск по городу
+- Поиск по ширине и долготе
+- Поиск по геолокации
+- Темная и светлая тема
+
+api: https://openweathermap.org/current
+
+Видео: [ссылка](https://drive.google.com/open?id=1SWxQRFu5HEzISY-gRKRl_aMSpCDfCWWO)
+
+<a href="https://ibb.co/zFzRFTC"><img src="https://i.ibb.co/r3V63Rq/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57.png" alt="Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57" width="200"></a>
+<a href="https://ibb.co/XZZGf0P"><img src="https://i.ibb.co/1ff4YyN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28.png" alt="Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28" width="200"></a>
+
 <b>Чаевые</b>
 - Калькулятор чаевых
   
