@@ -800,38 +800,38 @@
             </objects>
             <point key="canvasLocation" x="1099" y="1525"/>
         </scene>
-        <!--Byte Coin View Controller-->
+        <!--Coin View Controller-->
         <scene sceneID="kPF-Qq-kwA">
             <objects>
-                <viewController storyboardIdentifier="ByteCoinVCID" id="DTI-wO-o5Y" customClass="ByteCoinViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ByteCoinVCID" id="DTI-wO-o5Y" customClass="CoinViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JiD-kA-6xn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ByteCoin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bui-Nd-InE">
-                                <rect key="frame" x="149.5" y="94" width="115" height="36"/>
-                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
-                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <rect key="frame" x="146" y="94" width="122.5" height="38.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="32"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V8f-Xs-pdw">
-                                <rect key="frame" x="20" y="170" width="374" height="60"/>
+                                <rect key="frame" x="20" y="172.5" width="374" height="60"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SXc-I8-QCT">
-                                        <rect key="frame" x="319" y="19.5" width="35" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <rect key="frame" x="309.5" y="17" width="44.5" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99r-jb-whY">
-                                        <rect key="frame" x="301" y="19.5" width="8" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99r-jb-whY">
+                                        <rect key="frame" x="285.5" y="17" width="14" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoinsign.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0e8-1R-bJQ">
                                         <rect key="frame" x="10" y="8.5" width="44" height="43"/>
-                                        <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="7hD-dy-GfL"/>
                                             <constraint firstAttribute="height" constant="44" id="wlQ-7m-y5Q"/>
@@ -856,7 +856,7 @@
                                 </constraints>
                             </pickerView>
                         </subviews>
-                        <color key="backgroundColor" red="0.63074195379999998" green="0.92909663919999996" blue="0.93726164099999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.092820577323436737" green="0.51441711187362671" blue="0.46382933855056763" alpha="0.99981689453125" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V8f-Xs-pdw" firstAttribute="top" secondItem="Bui-Nd-InE" secondAttribute="bottom" constant="40" id="471-JG-LrM"/>
                             <constraint firstItem="Bui-Nd-InE" firstAttribute="centerX" secondItem="JiD-kA-6xn" secondAttribute="centerX" id="5Pc-4V-Wqv"/>
@@ -870,9 +870,9 @@
                         <viewLayoutGuide key="safeArea" id="k9S-Nf-ut1"/>
                     </view>
                     <connections>
-                        <outlet property="bitcoinLabel" destination="99r-jb-whY" id="WZS-Jz-to9"/>
-                        <outlet property="currencyLabel" destination="SXc-I8-QCT" id="DZC-5V-0a2"/>
+                        <outlet property="currencyLabel" destination="SXc-I8-QCT" id="C5E-kn-S9z"/>
                         <outlet property="currencyPicker" destination="b0J-ve-EUK" id="XdA-aN-tfd"/>
+                        <outlet property="valueLabel" destination="99r-jb-whY" id="Vub-If-udg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J1z-n4-KRK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
