@@ -50,6 +50,9 @@ class ViewController: UIViewController {
         presentVC(identifier: "WeatherVCID")
     }
     
+    @IBAction func byteCoinButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "ByteCoinVCID")
+    }
     
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
