@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct CoinData: Codable {
+struct CoinData: Decodable {
     let ask: Double
     let display_symbol: String
 }

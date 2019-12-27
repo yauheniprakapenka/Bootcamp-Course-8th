@@ -19,7 +19,7 @@ struct CoinManager {
     
     var delegate: CoinManagerDelegate?
     
-    func getPrice(for currency: String) {
+    func getCoinPrice(for currency: String) {
         let urlString = "\(baseURL)\(currency)"
         print(urlString)
         performRequest(urlString: urlString)
@@ -56,7 +56,6 @@ struct CoinManager {
             return coin
         } catch {
             delegate?.didFailWithError(error: error)
-            print(error)
             return nil
         }
     }
