@@ -19,14 +19,8 @@ struct CoinManager {
     
     var delegate: CoinManagerDelegate?
     
-    func getCoinPrice(for currency: String) {
-        let urlString = "\(baseURL)\(currency)"
-        print(urlString)
-        performRequest(urlString: urlString)
-    }
-    
-    func performRequest(urlString: String) {
-        if let url = URL(string: urlString) {
+    func getByteCoinPrice(urlString: String) {
+        if let url = URL(string: "\(baseURL)\(urlString)") {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
