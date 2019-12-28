@@ -27,6 +27,10 @@
 		3E7AD2CA23AA7681007BAF26 /* C.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C323AA7681007BAF26 /* C.wav */; };
 		3E7AD2CB23AA7681007BAF26 /* D.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C423AA7681007BAF26 /* D.wav */; };
 		3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3E7AD2C523AA7681007BAF26 /* A.wav */; };
+		3EA54A7923B60F0B00C97D06 /* CoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54A7823B60F0B00C97D06 /* CoinViewController.swift */; };
+		3EA54A7C23B6191E00C97D06 /* CoinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54A7B23B6191E00C97D06 /* CoinManager.swift */; };
+		3EA54A7E23B69D6D00C97D06 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54A7D23B69D6D00C97D06 /* CoinModel.swift */; };
+		3EA54A8023B69DD600C97D06 /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EA54A7F23B69DD600C97D06 /* CoinData.swift */; };
 		3EC4F77623AFB06F00B13975 /* BMICalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC4F77523AFB06F00B13975 /* BMICalculatorViewController.swift */; };
 		3EC583B723A6BDA000175E01 /* MagicBallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */; };
 		3EC6DDCB23B0AC3E00AED77F /* BMIResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6DDCA23B0AC3E00AED77F /* BMIResultViewController.swift */; };
@@ -69,6 +73,10 @@
 		3E7AD2C323AA7681007BAF26 /* C.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = C.wav; sourceTree = "<group>"; };
 		3E7AD2C423AA7681007BAF26 /* D.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = D.wav; sourceTree = "<group>"; };
 		3E7AD2C523AA7681007BAF26 /* A.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = A.wav; sourceTree = "<group>"; };
+		3EA54A7823B60F0B00C97D06 /* CoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinViewController.swift; sourceTree = "<group>"; };
+		3EA54A7B23B6191E00C97D06 /* CoinManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinManager.swift; sourceTree = "<group>"; };
+		3EA54A7D23B69D6D00C97D06 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		3EA54A7F23B69DD600C97D06 /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
 		3EC4F77523AFB06F00B13975 /* BMICalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorViewController.swift; sourceTree = "<group>"; };
 		3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicBallViewController.swift; sourceTree = "<group>"; };
 		3EC6DDCA23B0AC3E00AED77F /* BMIResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIResultViewController.swift; sourceTree = "<group>"; };
@@ -115,11 +123,12 @@
 		3E0A97D923AF406000B6B598 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3E557C4A23B352F100E23C58 /* Weather */,
 				3EEFB57C23B152ED000A71E4 /* Tipsy */,
 				3EC6DDCC23B0CF3B00AED77F /* BMI */,
 				3E0A97DE23AF7D3F00B6B598 /* Quiz */,
 				3E0A97DF23AF7D5500B6B598 /* Destiny */,
+				3E557C4A23B352F100E23C58 /* Weather */,
+				3EA54A7A23B618A700C97D06 /* ByteCoin */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +175,16 @@
 			path = Xylophone;
 			sourceTree = "<group>";
 		};
+		3EA54A7A23B618A700C97D06 /* ByteCoin */ = {
+			isa = PBXGroup;
+			children = (
+				3EA54A7B23B6191E00C97D06 /* CoinManager.swift */,
+				3EA54A7D23B69D6D00C97D06 /* CoinModel.swift */,
+				3EA54A7F23B69DD600C97D06 /* CoinData.swift */,
+			);
+			path = ByteCoin;
+			sourceTree = "<group>";
+		};
 		3EC583B823A6C6AF00175E01 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +201,7 @@
 				3EEFB57823B10B54000A71E4 /* TipsyCalculatorViewController.swift */,
 				3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */,
 				3EEFB5BC23B21F3D000A71E4 /* WeatherViewController.swift */,
+				3EA54A7823B60F0B00C97D06 /* CoinViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -343,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3EA54A7C23B6191E00C97D06 /* CoinManager.swift in Sources */,
 				3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */,
 				3E0A97DD23AF779000B6B598 /* DestinyViewController.swift in Sources */,
 				3EEFB58023B1536B000A71E4 /* TipsyBrain.swift in Sources */,
@@ -354,6 +375,7 @@
 				3EEFFCEA23A69F72003545D7 /* SceneDelegate.swift in Sources */,
 				3E0A97DB23AF43DA00B6B598 /* QuizBrain.swift in Sources */,
 				3EC4F77623AFB06F00B13975 /* BMICalculatorViewController.swift in Sources */,
+				3EA54A8023B69DD600C97D06 /* CoinData.swift in Sources */,
 				3EC6DDE323B0DE9C00AED77F /* BMIModel.swift in Sources */,
 				3E0A97E323AF7F4D00B6B598 /* StoryBrain.swift in Sources */,
 				3E0A97D823AE50E600B6B598 /* QuestionModel.swift in Sources */,
@@ -365,8 +387,10 @@
 				3E557C4C23B3530700E23C58 /* WeatherManager.swift in Sources */,
 				3EEFB57923B10B54000A71E4 /* TipsyCalculatorViewController.swift in Sources */,
 				3E557C5623B3BEDC00E23C58 /* WeatherModel.swift in Sources */,
+				3EA54A7E23B69D6D00C97D06 /* CoinModel.swift in Sources */,
 				3EC6DDCE23B0CF5B00AED77F /* CalculatorBrain.swift in Sources */,
 				3EC6DDCB23B0AC3E00AED77F /* BMIResultViewController.swift in Sources */,
+				3EA54A7923B60F0B00C97D06 /* CoinViewController.swift in Sources */,
 				3E7AD2BD23AA7355007BAF26 /* XylophoneViewController.swift in Sources */,
 				3EEFB5BD23B21F3D000A71E4 /* WeatherViewController.swift in Sources */,
 			);
