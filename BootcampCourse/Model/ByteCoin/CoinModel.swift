@@ -11,4 +11,8 @@ import Foundation
 struct CoinModel {
     let ask: Double
     let displaySymbol: String
+    let averageDay: Double
+    let averageWeek: Double
+    let averageMonth: Double
+    let displayTimestamp: String
 }

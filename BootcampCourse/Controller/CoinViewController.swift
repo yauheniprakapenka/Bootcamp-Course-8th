@@ -15,6 +15,12 @@ class CoinViewController: UIViewController {
     @IBOutlet weak var currencyPicker: UIPickerView!
     @IBOutlet weak var padView: UIView!
     
+    @IBOutlet weak var averageDayLabel: UILabel!
+    @IBOutlet weak var averageWeekLabel: UILabel!
+    @IBOutlet weak var averageMonthLabel: UILabel!
+    
+    @IBOutlet weak var timeLabel: UILabel!
+    
     var coinManager = CoinManager()
     
     override func viewDidLoad() {
@@ -26,6 +32,8 @@ class CoinViewController: UIViewController {
         currencyPicker.delegate = self
         
         padView.layer.cornerRadius = padView.frame.size.height / 2
+        
+        coinManager.getByteCoinPrice(urlString: "RUB")
     }
 }
 
@@ -53,10 +61,14 @@ extension CoinViewController: UIPickerViewDataSource, UIPickerViewDelegate {
 //MARK: - CoinManagerDelegate
 
 extension CoinViewController: CoinManagerDelegate {
-    func didUpdateCoin(coin: CoinModel) {
+    func didUpdateCoin(coinModel: CoinModel) {
         DispatchQueue.main.async {
-            self.valueLabel.text = String(coin.ask)
-            self.currencyLabel.text = coin.displaySymbol
+            self.valueLabel.text = String(coinModel.ask)
+            self.currencyLabel.text = coinModel.displaySymbol
+            self.averageDayLabel.text = String(coinModel.averageDay)
+            self.averageWeekLabel.text = String(coinModel.averageWeek)
+            self.averageMonthLabel.text = String(coinModel.averageMonth)
+            self.timeLabel.text = String(coinModel.displayTimestamp)
         }
     }
     

@@ -11,4 +11,12 @@ import Foundation
 struct CoinData: Decodable {
     let ask: Double
     let display_symbol: String
+    let averages: Averages
+    let display_timestamp: String
+}
+
+struct Averages: Decodable {
+    let day: Double
+    let week: Double
+    let month: Double
 }
