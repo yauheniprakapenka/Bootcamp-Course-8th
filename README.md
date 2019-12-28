@@ -11,8 +11,6 @@ Swift 5, iOS 13.3, Xcode 11.3
 
 
 <a href="https://ibb.co/ncSNSF4"><img src="https://i.ibb.co/bBnMnkY/Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-35.png" alt="Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-35" width="200"></a>
-<a href="https://ibb.co/pf57C3K"><img src="https://i.ibb.co/X7MQmz5/Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-59.png" alt="Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-59" width="200"></a>
-
 
 <b>Погода</b>
 - Поиск по городу, ширине и долготе через или геолокации через API
@@ -22,9 +20,6 @@ Swift 5, iOS 13.3, Xcode 11.3
 
 <a href="https://ibb.co/zFzRFTC"><img src="https://i.ibb.co/r3V63Rq/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57.png" alt="Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57" width="200"></a>
 <a href="https://ibb.co/XZZGf0P"><img src="https://i.ibb.co/1ff4YyN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28.png" alt="Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28" width="200"></a>
-
-<a href="https://ibb.co/ncSNSF4"><img src="https://i.ibb.co/bBnMnkY/Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-35.png" alt="Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-35" width="200"></a>
-<a href="https://ibb.co/pf57C3K"><img src="https://i.ibb.co/X7MQmz5/Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-59.png" alt="Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-59" width="200"></a>
 
 <b>Чаевые</b>
 - Калькулятор чаевых
