@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var myDataBase: DatabaseReference!
         myDataBase = Database.database().reference()
-        myDataBase.setValue("Got data")
+        myDataBase.setValue(Int.random(in: 1...100))
         
         return true
     }

@@ -54,6 +54,10 @@ class ViewController: UIViewController {
         presentVC(identifier: "ByteCoinVCID")
     }
     
+    @IBAction func flashChatButtonTapped(_ sender: UIButton) {
+        presentVC(identifier: "FlashChatVCID")
+    }
+    
     private func presentVC(identifier: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: identifier)
