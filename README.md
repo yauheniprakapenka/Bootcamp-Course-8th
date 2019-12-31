@@ -4,6 +4,10 @@
 
 Прохожу курс от [Angela Yu](https://www.udemy.com/course/ios-13-app-development-bootcamp/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Swift_v.PROF_la.EN_cc.ROW_ti.7956&utm_content=deal4584&utm_term=_._ag_81264461025_._ad_394028038225_._kw__._de_c_._dm__._pl__._ti_dsa-774930029729_._li_1001492_._pd__._&matchtype=b&gclid=Cj0KCQiA0NfvBRCVARIsAO4930mEnJVSuuVjcTRklx4ed-qzkRBVU_G5_eX0nDnTl7zAaH4pj4GfcyAaAjBSEALw_wcB)
 
+
+<b>Flash chat</b>
+- Установлены зависимости через Cocoa Pods: Firebase
+
 <b>Стоимость ByteCoin</b>
 - Получение стоимости ByteCoin через API
 
