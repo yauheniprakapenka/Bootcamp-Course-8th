@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D9A543B9640C99D8C946AD7 /* Pods_BootcampCourse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE8404818031B45B35D5A30 /* Pods_BootcampCourse.framework */; };
+		3E03090B23BB2B040005D6E7 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3E03090A23BB2B040005D6E7 /* GoogleService-Info.plist */; };
 		3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */; };
 		3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */; };
 		3E0A97D623AE0EE100B6B598 /* Background-Bubbles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */; };
@@ -54,6 +56,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2BE8404818031B45B35D5A30 /* Pods_BootcampCourse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BootcampCourse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E03090A23BB2B040005D6E7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzierViewController.swift; sourceTree = "<group>"; };
 		3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@3x.png"; sourceTree = "<group>"; };
 		3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@2x.png"; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 		3EEFFCF323A69F75003545D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3EEFFCF523A69F75003545D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DicesViewController.swift; sourceTree = "<group>"; };
+		BE18E14D55854EBE7541F28D /* Pods-BootcampCourse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootcampCourse.release.xcconfig"; path = "Target Support Files/Pods-BootcampCourse/Pods-BootcampCourse.release.xcconfig"; sourceTree = "<group>"; };
+		F4907F5E445D0884018A2D8E /* Pods-BootcampCourse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BootcampCourse.debug.xcconfig"; path = "Target Support Files/Pods-BootcampCourse/Pods-BootcampCourse.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,12 +113,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9A543B9640C99D8C946AD7 /* Pods_BootcampCourse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B24470C61CBDB38DF08F095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE8404818031B45B35D5A30 /* Pods_BootcampCourse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		3E0A97D223AE0EC400B6B598 /* Quizzier */ = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +239,7 @@
 				3EE5F03623AD0A6200DBFAC6 /* Eggs */,
 				3E7AD2BE23AA766B007BAF26 /* Xylophone */,
 				3EEFFCF523A69F75003545D7 /* Info.plist */,
+				3E03090A23BB2B040005D6E7 /* GoogleService-Info.plist */,
 				3EEFFCE723A69F72003545D7 /* AppDelegate.swift */,
 				3EEFFCE923A69F72003545D7 /* SceneDelegate.swift */,
 				3EEFFCF023A69F75003545D7 /* Assets.xcassets */,
@@ -271,6 +287,8 @@
 			children = (
 				3EEFFCE623A69F72003545D7 /* BootcampCourse */,
 				3EEFFCE523A69F72003545D7 /* Products */,
+				F95CC895DF6BBECD1F1CE9A4 /* Pods */,
+				1B24470C61CBDB38DF08F095 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -293,6 +311,16 @@
 			path = BootcampCourse;
 			sourceTree = "<group>";
 		};
+		F95CC895DF6BBECD1F1CE9A4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4907F5E445D0884018A2D8E /* Pods-BootcampCourse.debug.xcconfig */,
+				BE18E14D55854EBE7541F28D /* Pods-BootcampCourse.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -300,9 +328,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3EEFFCF823A69F75003545D7 /* Build configuration list for PBXNativeTarget "BootcampCourse" */;
 			buildPhases = (
+				885B3BBF633826FB169312F0 /* [CP] Check Pods Manifest.lock */,
 				3EEFFCE023A69F72003545D7 /* Sources */,
 				3EEFFCE123A69F72003545D7 /* Frameworks */,
 				3EEFFCE223A69F72003545D7 /* Resources */,
+				6633309EBF0381407B63C3E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -364,10 +394,53 @@
 				3E7AD2CC23AA7681007BAF26 /* A.wav in Resources */,
 				3E7AD2C623AA7681007BAF26 /* F.wav in Resources */,
 				3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */,
+				3E03090B23BB2B040005D6E7 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6633309EBF0381407B63C3E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BootcampCourse/Pods-BootcampCourse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BootcampCourse/Pods-BootcampCourse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BootcampCourse/Pods-BootcampCourse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		885B3BBF633826FB169312F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BootcampCourse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3EEFFCE023A69F72003545D7 /* Sources */ = {
@@ -546,6 +619,7 @@
 		};
 		3EEFFCF923A69F75003545D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4907F5E445D0884018A2D8E /* Pods-BootcampCourse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +638,7 @@
 		};
 		3EEFFCFA23A69F75003545D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE18E14D55854EBE7541F28D /* Pods-BootcampCourse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
