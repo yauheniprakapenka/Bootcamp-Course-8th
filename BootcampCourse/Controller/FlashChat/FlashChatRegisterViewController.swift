@@ -7,19 +7,21 @@
 //
 
 import UIKit
+import Firebase
 
 class FlashChatRegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextFField: UITextField!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
-    
     @IBAction func registerButtonTapped(_ sender: UIButton) {
-        
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextFField.text!) { (user, error) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Registration successful")
+                self.performSegue(withIdentifier: "goToChat", sender: self)
+            }
+        }
     }
-    
 }

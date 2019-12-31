@@ -925,11 +925,57 @@
                     <connections>
                         <outlet property="emailTextField" destination="Zqa-8C-gLx" id="Fh9-DF-RZW"/>
                         <outlet property="passwordTextFField" destination="N0N-ME-XIp" id="nbO-iv-oTo"/>
+                        <segue destination="HLd-c1-9c9" kind="show" identifier="goToChat" id="a7m-gz-llP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mH-sm-IiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2533" y="2204"/>
+        </scene>
+        <!--Flash Chat View Controller-->
+        <scene sceneID="4LM-jG-EG2">
+            <objects>
+                <viewController id="HLd-c1-9c9" customClass="FlashChatViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8D8-SC-2PN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monster-batman.png" translatesAutoresizingMaskIntoConstraints="NO" id="YN8-fo-3Ta">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CkM-Re-l8r">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ulA-Tc-66q">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ulA-Tc-66q" id="U5q-TZ-ots">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="1SR-n7-ObF" firstAttribute="trailing" secondItem="CkM-Re-l8r" secondAttribute="trailing" id="AJ2-VW-f4D"/>
+                            <constraint firstItem="YN8-fo-3Ta" firstAttribute="leading" secondItem="1SR-n7-ObF" secondAttribute="leading" id="CdZ-vT-be4"/>
+                            <constraint firstItem="CkM-Re-l8r" firstAttribute="leading" secondItem="1SR-n7-ObF" secondAttribute="leading" id="GZe-7Z-3TL"/>
+                            <constraint firstItem="YN8-fo-3Ta" firstAttribute="top" secondItem="8D8-SC-2PN" secondAttribute="top" id="REP-Yo-9WM"/>
+                            <constraint firstItem="CkM-Re-l8r" firstAttribute="top" secondItem="1SR-n7-ObF" secondAttribute="top" id="Ry9-qi-nYR"/>
+                            <constraint firstItem="1SR-n7-ObF" firstAttribute="bottom" secondItem="CkM-Re-l8r" secondAttribute="bottom" id="ckj-X2-3eB"/>
+                            <constraint firstAttribute="bottom" secondItem="YN8-fo-3Ta" secondAttribute="bottom" id="cmo-rj-lLO"/>
+                            <constraint firstItem="1SR-n7-ObF" firstAttribute="trailing" secondItem="YN8-fo-3Ta" secondAttribute="trailing" id="plX-G4-eMp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1SR-n7-ObF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vcr-R1-lK4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZwO-Z8-za3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3300" y="2571"/>
         </scene>
         <!--Coin View Controller-->
         <scene sceneID="kPF-Qq-kwA">
@@ -2398,10 +2444,10 @@
             </objects>
             <point key="canvasLocation" x="2505" y="132"/>
         </scene>
-        <!--Flash Chat View Controller-->
+        <!--Flash Chat Auth View Controller-->
         <scene sceneID="zGK-Ri-lQh">
             <objects>
-                <navigationController storyboardIdentifier="FlashChatVCID" automaticallyAdjustsScrollViewInsets="NO" id="Vk9-0q-ilV" customClass="FlashChatViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FlashChatVCID" automaticallyAdjustsScrollViewInsets="NO" id="Vk9-0q-ilV" customClass="FlashChatAuthViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="bfs-eW-wUj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -8,6 +8,6 @@
 
 import UIKit
 
-class FlashChatViewController: UIViewController {
+class FlashChatAuthViewController: UINavigationController {
     
 }
