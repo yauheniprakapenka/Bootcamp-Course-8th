@@ -18,10 +18,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         FirebaseApp.configure()
         
-        var myDataBase: DatabaseReference!
-        myDataBase = Database.database().reference()
-        myDataBase.setValue(Int.random(in: 1...100))
-        
         return true
     }
 

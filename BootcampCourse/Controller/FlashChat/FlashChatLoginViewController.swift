@@ -10,9 +10,4 @@ import UIKit
 
 class FlashChatLoginViewController: UIViewController {
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        print("11111")
-    }
 }
