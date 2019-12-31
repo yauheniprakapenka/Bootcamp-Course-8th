@@ -17,6 +17,8 @@
 		3E03091923BB45470005D6E7 /* FlashChatRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091823BB45470005D6E7 /* FlashChatRegisterViewController.swift */; };
 		3E03091B23BB47AD0005D6E7 /* FlashChatLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091A23BB47AD0005D6E7 /* FlashChatLoginViewController.swift */; };
 		3E03091D23BB67C90005D6E7 /* FlashChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091C23BB67C90005D6E7 /* FlashChatViewController.swift */; };
+		3E03092723BBCAD30005D6E7 /* CustomMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03092523BBCAD30005D6E7 /* CustomMessageCell.swift */; };
+		3E03092823BBCAD30005D6E7 /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E03092623BBCAD30005D6E7 /* CustomMessageCell.xib */; };
 		3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */; };
 		3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */; };
 		3E0A97D623AE0EE100B6B598 /* Background-Bubbles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */; };
@@ -74,6 +76,8 @@
 		3E03091823BB45470005D6E7 /* FlashChatRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatRegisterViewController.swift; sourceTree = "<group>"; };
 		3E03091A23BB47AD0005D6E7 /* FlashChatLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatLoginViewController.swift; sourceTree = "<group>"; };
 		3E03091C23BB67C90005D6E7 /* FlashChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatViewController.swift; sourceTree = "<group>"; };
+		3E03092523BBCAD30005D6E7 /* CustomMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMessageCell.swift; sourceTree = "<group>"; };
+		3E03092623BBCAD30005D6E7 /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 		3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzierViewController.swift; sourceTree = "<group>"; };
 		3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@3x.png"; sourceTree = "<group>"; };
 		3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@2x.png"; sourceTree = "<group>"; };
@@ -164,6 +168,15 @@
 				3E03091C23BB67C90005D6E7 /* FlashChatViewController.swift */,
 			);
 			path = FlashChat;
+			sourceTree = "<group>";
+		};
+		3E03091E23BBC4600005D6E7 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				3E03092523BBCAD30005D6E7 /* CustomMessageCell.swift */,
+				3E03092623BBCAD30005D6E7 /* CustomMessageCell.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		3E0A97D223AE0EC400B6B598 /* Quizzier */ = {
@@ -290,6 +303,7 @@
 		3EC583BA23A6C6D500175E01 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3E03091E23BBC4600005D6E7 /* CustomView */,
 				3EEFFCF223A69F75003545D7 /* LaunchScreen.storyboard */,
 				3EEFFCED23A69F72003545D7 /* Main.storyboard */,
 			);
@@ -438,6 +452,7 @@
 				3E03091223BB3A910005D6E7 /* Monster-batman.png in Resources */,
 				3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */,
 				3E03090B23BB2B040005D6E7 /* GoogleService-Info.plist in Resources */,
+				3E03092823BBCAD30005D6E7 /* CustomMessageCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +523,7 @@
 				3EC6DDE323B0DE9C00AED77F /* BMIModel.swift in Sources */,
 				3E0A97E323AF7F4D00B6B598 /* StoryBrain.swift in Sources */,
 				3E0A97D823AE50E600B6B598 /* QuestionModel.swift in Sources */,
+				3E03092723BBCAD30005D6E7 /* CustomMessageCell.swift in Sources */,
 				3E0A97E123AF7D6C00B6B598 /* StoryModel.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
 				3E03091D23BB67C90005D6E7 /* FlashChatViewController.swift in Sources */,
