@@ -812,7 +812,7 @@
         <!--Welcome-->
         <scene sceneID="9Tj-w4-ZHI">
             <objects>
-                <viewController id="QXR-nP-j9U" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="QXR-nP-j9U" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cJO-5c-fcN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -871,7 +871,7 @@
         <!--Flash Chat Register View Controller-->
         <scene sceneID="Kg2-JP-oRY">
             <objects>
-                <viewController id="Ji3-y7-RKS" customClass="FlashChatRegisterViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Ji3-y7-RKS" customClass="FlashChatRegisterViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wwr-Wz-HQF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -935,7 +935,7 @@
         <!--Flash Chat View Controller-->
         <scene sceneID="4LM-jG-EG2">
             <objects>
-                <viewController id="HLd-c1-9c9" customClass="FlashChatViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="HLd-c1-9c9" customClass="FlashChatViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8D8-SC-2PN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -944,10 +944,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CkM-Re-l8r">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="714"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="ulA-Tc-66q">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ulA-Tc-66q">
                                         <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ulA-Tc-66q" id="U5q-TZ-ots">
@@ -957,25 +957,69 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-7a-mx5">
+                                <rect key="frame" x="0.0" y="714" width="414" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-Rq-Zkx">
+                                        <rect key="frame" x="324" y="15" width="60" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.32979917526245117" blue="0.99620169401168823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="d9s-nM-EKB"/>
+                                        </constraints>
+                                        <state key="normal" title="Send">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="sendButtonTapped:" destination="HLd-c1-9c9" eventType="touchUpInside" id="WH9-eS-8KN"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzr-mR-LYs">
+                                        <rect key="frame" x="20" y="13" width="284" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96883112192153931" green="0.96475964784622192" blue="0.88269037008285522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="0Tf-Rq-Zkx" firstAttribute="leading" secondItem="xzr-mR-LYs" secondAttribute="trailing" constant="20" id="3gP-fJ-Snc"/>
+                                    <constraint firstItem="0Tf-Rq-Zkx" firstAttribute="centerY" secondItem="eSW-7a-mx5" secondAttribute="centerY" id="I7y-py-eaX"/>
+                                    <constraint firstAttribute="height" constant="60" id="LAL-Ke-uHJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Tf-Rq-Zkx" secondAttribute="trailing" constant="30" id="Qjd-jO-Vxu"/>
+                                    <constraint firstItem="xzr-mR-LYs" firstAttribute="leading" secondItem="eSW-7a-mx5" secondAttribute="leading" constant="20" id="ZEb-Zf-qca"/>
+                                    <constraint firstItem="xzr-mR-LYs" firstAttribute="centerY" secondItem="eSW-7a-mx5" secondAttribute="centerY" id="ryH-6d-UJK"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="1SR-n7-ObF" firstAttribute="trailing" secondItem="CkM-Re-l8r" secondAttribute="trailing" id="AJ2-VW-f4D"/>
                             <constraint firstItem="YN8-fo-3Ta" firstAttribute="leading" secondItem="1SR-n7-ObF" secondAttribute="leading" id="CdZ-vT-be4"/>
                             <constraint firstItem="CkM-Re-l8r" firstAttribute="leading" secondItem="1SR-n7-ObF" secondAttribute="leading" id="GZe-7Z-3TL"/>
+                            <constraint firstItem="eSW-7a-mx5" firstAttribute="top" secondItem="CkM-Re-l8r" secondAttribute="bottom" id="H40-uI-jvH"/>
                             <constraint firstItem="YN8-fo-3Ta" firstAttribute="top" secondItem="8D8-SC-2PN" secondAttribute="top" id="REP-Yo-9WM"/>
                             <constraint firstItem="CkM-Re-l8r" firstAttribute="top" secondItem="1SR-n7-ObF" secondAttribute="top" id="Ry9-qi-nYR"/>
-                            <constraint firstItem="1SR-n7-ObF" firstAttribute="bottom" secondItem="CkM-Re-l8r" secondAttribute="bottom" id="ckj-X2-3eB"/>
                             <constraint firstAttribute="bottom" secondItem="YN8-fo-3Ta" secondAttribute="bottom" id="cmo-rj-lLO"/>
+                            <constraint firstItem="eSW-7a-mx5" firstAttribute="bottom" secondItem="1SR-n7-ObF" secondAttribute="bottom" id="nEC-nU-Rhx"/>
                             <constraint firstItem="1SR-n7-ObF" firstAttribute="trailing" secondItem="YN8-fo-3Ta" secondAttribute="trailing" id="plX-G4-eMp"/>
+                            <constraint firstItem="eSW-7a-mx5" firstAttribute="trailing" secondItem="1SR-n7-ObF" secondAttribute="trailing" id="tRo-5p-5mq"/>
+                            <constraint firstItem="eSW-7a-mx5" firstAttribute="leading" secondItem="1SR-n7-ObF" secondAttribute="leading" id="ul6-Rg-luD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1SR-n7-ObF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vcr-R1-lK4"/>
+                    <navigationItem key="navigationItem" id="vcr-R1-lK4">
+                        <barButtonItem key="rightBarButtonItem" title="Log out" id="M7G-ef-cqi">
+                            <connections>
+                                <action selector="logOutButtonTapped:" destination="HLd-c1-9c9" id="IPL-2m-2SL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="messageTableView" destination="CkM-Re-l8r" id="xRp-Em-DBv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwO-Z8-za3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3300" y="2571"/>
+            <point key="canvasLocation" x="3300.0000000000005" y="2570.7589285714284"/>
         </scene>
         <!--Coin View Controller-->
         <scene sceneID="kPF-Qq-kwA">
@@ -2447,7 +2491,7 @@
         <!--Flash Chat Auth View Controller-->
         <scene sceneID="zGK-Ri-lQh">
             <objects>
-                <navigationController storyboardIdentifier="FlashChatVCID" automaticallyAdjustsScrollViewInsets="NO" id="Vk9-0q-ilV" customClass="FlashChatAuthViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="FlashChatVCID" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="Vk9-0q-ilV" customClass="FlashChatAuthViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="bfs-eW-wUj">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
