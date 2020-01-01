@@ -13,6 +13,7 @@ class FlashChatLoginViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +23,16 @@ class FlashChatLoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonTapped(_ sender: UIButton) {
+        activityIndicator.startAnimating()
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authDataResult, error) in
             if error != nil {
                 print(error!)
+                self.activityIndicator.stopAnimating()
             } else {
                 print("signIn successful")
                 self.performSegue(withIdentifier: "goToChat", sender: self)
+                self.activityIndicator.stopAnimating()
             }
         }
     }
-    
 }

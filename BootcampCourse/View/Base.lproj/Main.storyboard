@@ -237,7 +237,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="272"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="diceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="UQ0-hP-a2j">
-                                                <rect key="frame" x="11" y="30" width="392" height="212"/>
+                                                <rect key="frame" x="109" y="30" width="196.00000000000006" height="212"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -250,13 +250,13 @@
                                         <rect key="frame" x="0.0" y="273" width="414" height="272"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="OeV-KT-J9E">
-                                                <rect key="frame" x="-23" y="36" width="460" height="200"/>
+                                                <rect key="frame" x="77" y="86" width="260" height="100"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-xt-j6M">
-                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                                     </imageView>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice1" translatesAutoresizingMaskIntoConstraints="NO" id="NqD-hn-Det">
-                                                        <rect key="frame" x="260" y="0.0" width="200" height="200"/>
+                                                        <rect key="frame" x="160" y="0.0" width="100" height="100"/>
                                                     </imageView>
                                                 </subviews>
                                             </stackView>
@@ -878,6 +878,9 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monster-batman.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ing-WV-4OQ">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.92073553799999996" green="0.032710344939999997" blue="0.34918113360000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large" weight="bold"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zqa-8C-gLx">
                                 <rect key="frame" x="40" y="100" width="334" height="34"/>
@@ -902,27 +905,41 @@
                                     <action selector="registerButtonTapped:" destination="Ji3-y7-RKS" eventType="touchUpInside" id="1jX-GD-dAu"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="BDD-44-w4I">
+                                <rect key="frame" x="177" y="374" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.75448953619909498" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="ci4-cx-OSf"/>
+                                    <constraint firstAttribute="height" constant="60" id="iuk-cI-hR3"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Ing-WV-4OQ" firstAttribute="centerY" secondItem="wwr-Wz-HQF" secondAttribute="centerY" id="3Sq-q4-fXl"/>
                             <constraint firstItem="Ing-WV-4OQ" firstAttribute="leading" secondItem="XE3-dF-Kfr" secondAttribute="leading" id="BmX-69-4us"/>
                             <constraint firstItem="kt3-dR-zip" firstAttribute="leading" secondItem="XE3-dF-Kfr" secondAttribute="leading" id="KUz-Ta-P1P"/>
                             <constraint firstItem="kt3-dR-zip" firstAttribute="top" secondItem="N0N-ME-XIp" secondAttribute="bottom" constant="40" id="MPe-pS-yfL"/>
                             <constraint firstItem="XE3-dF-Kfr" firstAttribute="trailing" secondItem="N0N-ME-XIp" secondAttribute="trailing" constant="40" id="NZU-IC-SQn"/>
                             <constraint firstItem="N0N-ME-XIp" firstAttribute="top" secondItem="Zqa-8C-gLx" secondAttribute="bottom" constant="20" id="OUT-yo-cZG"/>
+                            <constraint firstItem="BDD-44-w4I" firstAttribute="centerY" secondItem="wwr-Wz-HQF" secondAttribute="centerY" id="U5j-Re-sHI"/>
                             <constraint firstItem="XE3-dF-Kfr" firstAttribute="trailing" secondItem="Ing-WV-4OQ" secondAttribute="trailing" id="Ub3-jy-4Eu"/>
                             <constraint firstItem="XE3-dF-Kfr" firstAttribute="trailing" secondItem="Zqa-8C-gLx" secondAttribute="trailing" constant="40" id="jpy-ZO-2og"/>
                             <constraint firstItem="Zqa-8C-gLx" firstAttribute="leading" secondItem="XE3-dF-Kfr" secondAttribute="leading" constant="40" id="qMh-O6-Pwo"/>
                             <constraint firstItem="Ing-WV-4OQ" firstAttribute="top" secondItem="XE3-dF-Kfr" secondAttribute="top" id="rPX-Nf-Okr"/>
                             <constraint firstItem="N0N-ME-XIp" firstAttribute="leading" secondItem="XE3-dF-Kfr" secondAttribute="leading" constant="40" id="sTt-TO-JXe"/>
+                            <constraint firstItem="BDD-44-w4I" firstAttribute="centerX" secondItem="wwr-Wz-HQF" secondAttribute="centerX" id="swx-h6-5vW"/>
                             <constraint firstItem="Zqa-8C-gLx" firstAttribute="top" secondItem="XE3-dF-Kfr" secondAttribute="top" constant="100" id="t7S-dY-Vcy"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Ing-WV-4OQ" secondAttribute="bottom" constant="-34" id="ukE-qU-pBp"/>
                             <constraint firstItem="kt3-dR-zip" firstAttribute="trailing" secondItem="XE3-dF-Kfr" secondAttribute="trailing" id="wfA-4v-sop"/>
+                            <constraint firstItem="Ing-WV-4OQ" firstAttribute="centerX" secondItem="wwr-Wz-HQF" secondAttribute="centerX" id="xHI-dq-RAt"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="XE3-dF-Kfr"/>
                     </view>
                     <navigationItem key="navigationItem" id="gGR-GK-ta8"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="BDD-44-w4I" id="EHb-My-FJ9"/>
                         <outlet property="emailTextField" destination="Zqa-8C-gLx" id="Fh9-DF-RZW"/>
                         <outlet property="passwordTextField" destination="N0N-ME-XIp" id="nbO-iv-oTo"/>
                         <segue destination="HLd-c1-9c9" kind="show" identifier="goToChat" id="a7m-gz-llP"/>
@@ -930,7 +947,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mH-sm-IiR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2533" y="2204"/>
+            <point key="canvasLocation" x="2530.434782608696" y="2203.7946428571427"/>
         </scene>
         <!--Flash Chat View Controller-->
         <scene sceneID="4LM-jG-EG2">
@@ -1755,7 +1772,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="iAJ-sq-aSg">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414.00000000000023" height="896"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKw-sj-LAG">
                                 <rect key="frame" x="20" y="742" width="374" height="80"/>
@@ -1974,7 +1991,7 @@
                                         <rect key="frame" x="0.0" y="281" width="414" height="280"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball3" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Yq-4EH">
-                                                <rect key="frame" x="54.5" y="20" width="305" height="240"/>
+                                                <rect key="frame" x="-98" y="20" width="610" height="240"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -2524,6 +2541,15 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Monster-batman.png" translatesAutoresizingMaskIntoConstraints="NO" id="bFo-6o-sS0">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="KrK-CA-7Hc">
+                                <rect key="frame" x="177" y="374" width="60" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.75448953620000003" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="k45-IR-6xw"/>
+                                    <constraint firstAttribute="width" constant="60" id="pYH-aZ-lJU"/>
+                                </constraints>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vaI-up-ixk">
                                 <rect key="frame" x="40" y="100" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -2550,10 +2576,12 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="KrK-CA-7Hc" firstAttribute="centerX" secondItem="TRG-4B-yme" secondAttribute="centerX" id="2Ki-0K-RIw"/>
                             <constraint firstItem="Hog-Rh-MGF" firstAttribute="leading" secondItem="WCE-SL-t3j" secondAttribute="leading" id="2xq-Kv-BdN"/>
                             <constraint firstItem="Hog-Rh-MGF" firstAttribute="trailing" secondItem="WCE-SL-t3j" secondAttribute="trailing" id="740-dJ-9qG"/>
                             <constraint firstItem="IMD-wf-dfr" firstAttribute="leading" secondItem="WCE-SL-t3j" secondAttribute="leading" constant="40" id="Gbz-Vv-JEq"/>
                             <constraint firstItem="Hog-Rh-MGF" firstAttribute="top" secondItem="IMD-wf-dfr" secondAttribute="bottom" constant="40" id="QCB-Q5-EgZ"/>
+                            <constraint firstItem="KrK-CA-7Hc" firstAttribute="centerY" secondItem="TRG-4B-yme" secondAttribute="centerY" id="cYa-3S-TzI"/>
                             <constraint firstItem="WCE-SL-t3j" firstAttribute="trailing" secondItem="vaI-up-ixk" secondAttribute="trailing" constant="40" id="dVt-qm-ihI"/>
                             <constraint firstItem="bFo-6o-sS0" firstAttribute="top" secondItem="WCE-SL-t3j" secondAttribute="top" id="gOE-fm-iJz"/>
                             <constraint firstItem="WCE-SL-t3j" firstAttribute="trailing" secondItem="IMD-wf-dfr" secondAttribute="trailing" constant="40" id="mob-5p-Djb"/>
@@ -2568,6 +2596,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="oIP-Lm-Ke2"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="KrK-CA-7Hc" id="GjO-fs-Dk9"/>
                         <outlet property="emailTextField" destination="vaI-up-ixk" id="qDP-4Z-Imh"/>
                         <outlet property="passwordTextField" destination="IMD-wf-dfr" id="6Bo-el-0CC"/>
                         <segue destination="HLd-c1-9c9" kind="show" identifier="goToChat" id="QHp-cO-Vwk"/>
