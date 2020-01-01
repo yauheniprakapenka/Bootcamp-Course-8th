@@ -11,14 +11,17 @@ import Firebase
 
 class FlashChatViewController: UIViewController {
     
+    var messageArray = ["First message", "Second message", "Third message"]
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageTextField: UITextField!
+    @IBOutlet weak var sendButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Flash chat"
-
+        
         tableView.delegate = self
         tableView.dataSource = self
         
@@ -32,6 +35,18 @@ class FlashChatViewController: UIViewController {
     }
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {
+        let messageDB = Database.database().reference().child("Messages")
+        let messageDictionary = ["Sender": Auth.auth().currentUser?.email,
+                                 "MessageDictionary": messageTextField.text!]
+        
+        messageDB.childByAutoId().setValue(messageDictionary) { (error, reference) in
+            if error != nil {
+                print(error!)
+            } else {
+                print("Message saved succesfully")
+                self.messageTextField.text = ""
+            }
+        }
     }
     
     @IBAction func logOutButtonTapped(_ sender: UIBarButtonItem) {
@@ -57,12 +72,12 @@ class FlashChatViewController: UIViewController {
 
 extension FlashChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return messageArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        let messageArray = ["First message", "Second message", "Third message"]
+        
         cell.messageLabel.text = messageArray[indexPath.row]
         cell.messageLabel?.numberOfLines = 0
         cell.avatarImageView.image = #imageLiteral(resourceName: "soft_egg")
