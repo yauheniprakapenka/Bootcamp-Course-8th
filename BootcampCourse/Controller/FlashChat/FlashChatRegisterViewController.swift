@@ -12,18 +12,17 @@ import Firebase
 class FlashChatRegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextFField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        performSegue(withIdentifier: "goToChat", sender: self)
         emailTextField.text = "test@testdk.by"
-        passwordTextFField.text = "123456"
+        passwordTextField.text = "123456"
     }
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {
-        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextFField.text!) { (user, error) in
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if error != nil {
                 print(error!)
             } else {
