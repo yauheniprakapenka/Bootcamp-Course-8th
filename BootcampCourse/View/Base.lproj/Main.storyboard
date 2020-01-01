@@ -924,7 +924,7 @@
                     <navigationItem key="navigationItem" id="gGR-GK-ta8"/>
                     <connections>
                         <outlet property="emailTextField" destination="Zqa-8C-gLx" id="Fh9-DF-RZW"/>
-                        <outlet property="passwordTextFField" destination="N0N-ME-XIp" id="nbO-iv-oTo"/>
+                        <outlet property="passwordTextField" destination="N0N-ME-XIp" id="nbO-iv-oTo"/>
                         <segue destination="HLd-c1-9c9" kind="show" identifier="goToChat" id="a7m-gz-llP"/>
                     </connections>
                 </viewController>
@@ -2543,6 +2543,9 @@
                                 <state key="normal" title="Log in">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButtonTapped:" destination="RZX-Wy-Jre" eventType="touchUpInside" id="AGz-ej-HQD"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -2564,6 +2567,11 @@
                         <viewLayoutGuide key="safeArea" id="WCE-SL-t3j"/>
                     </view>
                     <navigationItem key="navigationItem" id="oIP-Lm-Ke2"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="vaI-up-ixk" id="qDP-4Z-Imh"/>
+                        <outlet property="passwordTextField" destination="IMD-wf-dfr" id="6Bo-el-0CC"/>
+                        <segue destination="HLd-c1-9c9" kind="show" identifier="goToChat" id="QHp-cO-Vwk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="evZ-qr-mMC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -2590,4 +2598,7 @@
         <image name="result_background" width="375" height="812"/>
         <image name="soft_egg" width="287" height="365"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="QHp-cO-Vwk"/>
+    </inferredMetricsTieBreakers>
 </document>
