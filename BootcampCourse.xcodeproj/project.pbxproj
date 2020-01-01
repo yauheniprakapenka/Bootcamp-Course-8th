@@ -277,8 +277,6 @@
 		3EC583B823A6C6AF00175E01 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				3E03091523BB43F00005D6E7 /* FlashChat */,
-				3E86073D23B89281001CA093 /* Tipsy */,
 				3EEFFCEB23A69F72003545D7 /* ViewController.swift */,
 				3EEFFCFB23A6A470003545D7 /* DicesViewController.swift */,
 				3EC583B623A6BDA000175E01 /* MagicBallViewController.swift */,
@@ -291,6 +289,8 @@
 				3EC6DDCA23B0AC3E00AED77F /* BMIResultViewController.swift */,
 				3EEFB5BC23B21F3D000A71E4 /* WeatherViewController.swift */,
 				3EA54A7823B60F0B00C97D06 /* CoinViewController.swift */,
+				3E86073D23B89281001CA093 /* Tipsy */,
+				3E03091523BB43F00005D6E7 /* FlashChat */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

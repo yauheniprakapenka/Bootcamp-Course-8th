@@ -1016,6 +1016,7 @@
                     <connections>
                         <outlet property="heightConstraint" destination="LAL-Ke-uHJ" id="BKK-gA-QgQ"/>
                         <outlet property="messageTextField" destination="xzr-mR-LYs" id="Q6T-4g-MTu"/>
+                        <outlet property="sendButton" destination="0Tf-Rq-Zkx" id="Zae-xQ-ozc"/>
                         <outlet property="tableView" destination="CkM-Re-l8r" id="xRp-Em-DBv"/>
                     </connections>
                 </viewController>

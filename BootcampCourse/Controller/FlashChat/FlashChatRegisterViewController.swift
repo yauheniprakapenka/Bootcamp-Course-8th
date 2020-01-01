@@ -17,7 +17,9 @@ class FlashChatRegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        performSegue(withIdentifier: "goToChat", sender: self)
+//        performSegue(withIdentifier: "goToChat", sender: self)
+        emailTextField.text = "test@testdk.by"
+        passwordTextFField.text = "123456"
     }
     
     @IBAction func registerButtonTapped(_ sender: UIButton) {

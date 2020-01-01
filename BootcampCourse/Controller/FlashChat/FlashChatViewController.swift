@@ -11,8 +11,8 @@ import Firebase
 
 class FlashChatViewController: UIViewController {
     
-    var messageArray = ["First message", "Second message", "Third message"]
-    
+    private var messageArray = [MessageModel]()
+
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageTextField: UITextField!
@@ -29,6 +29,7 @@ class FlashChatViewController: UIViewController {
         
         tableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
+        retrieveMessages()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
         tableView.addGestureRecognizer(tapGesture)
@@ -37,7 +38,7 @@ class FlashChatViewController: UIViewController {
     @IBAction func sendButtonTapped(_ sender: UIButton) {
         let messageDB = Database.database().reference().child("Messages")
         let messageDictionary = ["Sender": Auth.auth().currentUser?.email,
-                                 "MessageDictionary": messageTextField.text!]
+                                 "MessageBody": messageTextField.text!]
         
         messageDB.childByAutoId().setValue(messageDictionary) { (error, reference) in
             if error != nil {
@@ -45,6 +46,7 @@ class FlashChatViewController: UIViewController {
             } else {
                 print("Message saved succesfully")
                 self.messageTextField.text = ""
+                self.view.endEditing(true)
             }
         }
     }
@@ -58,13 +60,32 @@ class FlashChatViewController: UIViewController {
         }
     }
     
+    @objc func tableViewTapped() {
+        view.endEditing(true)
+    }
+    
     private func configureTableView() {
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
     }
     
-    @objc func tableViewTapped() {
-        view.endEditing(true)
+    private func retrieveMessages() {
+        let messageDB = Database.database().reference().child("Messages")
+        messageDB.observe(.childAdded) { (snapshot) in
+            let snapshotValue = snapshot.value as! Dictionary<String,String>
+            let sender = snapshotValue["Sender"]!
+            let messageBody = snapshotValue["MessageBody"]!
+            
+            let message = MessageModel()
+            message.messageBody = messageBody
+            message.sender = sender
+            self.messageArray.append(message)
+            
+            self.configureTableView()
+            self.tableView.reloadData()
+            
+            print(sender, messageBody)
+        }
     }
 }
 
@@ -78,8 +99,8 @@ extension FlashChatViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
         
-        cell.messageLabel.text = messageArray[indexPath.row]
-        cell.messageLabel?.numberOfLines = 0
+        cell.namelabel.text = messageArray[indexPath.row].sender
+        cell.messageLabel.text = messageArray[indexPath.row].messageBody
         cell.avatarImageView.image = #imageLiteral(resourceName: "soft_egg")
 
         return cell
@@ -91,14 +112,14 @@ extension FlashChatViewController: UITableViewDelegate, UITableViewDataSource {
 extension FlashChatViewController: UITextFieldDelegate {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         UIView.animate(withDuration: 0.2) {
-            self.heightConstraint.constant = 308
+            self.heightConstraint.constant = 320
             self.view.layoutIfNeeded()
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-        UIView.animate(withDuration: 0.2) {
-            self.heightConstraint.constant = 50
+        UIView.animate(withDuration: 0.19) {
+            self.heightConstraint.constant = 70
             self.view.layoutIfNeeded()
         }
     }
