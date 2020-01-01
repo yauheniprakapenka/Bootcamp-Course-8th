@@ -11,17 +11,24 @@ import Firebase
 
 class FlashChatViewController: UIViewController {
     
-    @IBOutlet weak var messageTableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var heightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var messageTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Flash chat"
 
-        messageTableView.delegate = self
-        messageTableView.dataSource = self
+        tableView.delegate = self
+        tableView.dataSource = self
         
-        messageTableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
+        messageTextField.delegate = self
+        
+        tableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
+        tableView.addGestureRecognizer(tapGesture)
     }
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {
@@ -37,9 +44,12 @@ class FlashChatViewController: UIViewController {
     }
     
     private func configureTableView() {
-        messageTableView.rowHeight = UITableView.automaticDimension
-        messageTableView.estimatedRowHeight = 100
-        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 100
+    }
+    
+    @objc func tableViewTapped() {
+        view.endEditing(true)
     }
 }
 
@@ -52,11 +62,29 @@ extension FlashChatViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "customMessageCell", for: indexPath) as! CustomMessageCell
-        let messageArray = ["First message message mmessage messagemessage messagemessage messageessagmessage messagemessage messagemessage messagee message", "Second message message message message", "Thied message message message message message"]
+        let messageArray = ["First message", "Second message", "Third message"]
         cell.messageLabel.text = messageArray[indexPath.row]
         cell.messageLabel?.numberOfLines = 0
         cell.avatarImageView.image = #imageLiteral(resourceName: "soft_egg")
 
         return cell
+    }
+}
+
+// MARK: - UITextViewDelegate
+
+extension FlashChatViewController: UITextFieldDelegate {
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.2) {
+            self.heightConstraint.constant = 308
+            self.view.layoutIfNeeded()
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        UIView.animate(withDuration: 0.2) {
+            self.heightConstraint.constant = 50
+            self.view.layoutIfNeeded()
+        }
     }
 }

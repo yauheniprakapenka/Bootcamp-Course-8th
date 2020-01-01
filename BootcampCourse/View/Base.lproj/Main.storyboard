@@ -961,7 +961,7 @@
                                 <rect key="frame" x="0.0" y="714" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-Rq-Zkx">
-                                        <rect key="frame" x="324" y="15" width="60" height="30"/>
+                                        <rect key="frame" x="324" y="10" width="60" height="30"/>
                                         <color key="backgroundColor" red="0.0" green="0.32979917526245117" blue="0.99620169401168823" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="60" id="d9s-nM-EKB"/>
@@ -974,19 +974,19 @@
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your message" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xzr-mR-LYs">
-                                        <rect key="frame" x="20" y="13" width="284" height="34"/>
+                                        <rect key="frame" x="20" y="10" width="284" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="send"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96883112192153931" green="0.96475964784622192" blue="0.88269037008285522" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="0Tf-Rq-Zkx" firstAttribute="leading" secondItem="xzr-mR-LYs" secondAttribute="trailing" constant="20" id="3gP-fJ-Snc"/>
-                                    <constraint firstItem="0Tf-Rq-Zkx" firstAttribute="centerY" secondItem="eSW-7a-mx5" secondAttribute="centerY" id="I7y-py-eaX"/>
+                                    <constraint firstItem="xzr-mR-LYs" firstAttribute="top" secondItem="eSW-7a-mx5" secondAttribute="top" constant="10" id="FpO-Py-oXE"/>
                                     <constraint firstAttribute="height" constant="60" id="LAL-Ke-uHJ"/>
+                                    <constraint firstItem="0Tf-Rq-Zkx" firstAttribute="top" secondItem="eSW-7a-mx5" secondAttribute="top" constant="10" id="Me9-DK-hi7"/>
                                     <constraint firstAttribute="trailing" secondItem="0Tf-Rq-Zkx" secondAttribute="trailing" constant="30" id="Qjd-jO-Vxu"/>
                                     <constraint firstItem="xzr-mR-LYs" firstAttribute="leading" secondItem="eSW-7a-mx5" secondAttribute="leading" constant="20" id="ZEb-Zf-qca"/>
-                                    <constraint firstItem="xzr-mR-LYs" firstAttribute="centerY" secondItem="eSW-7a-mx5" secondAttribute="centerY" id="ryH-6d-UJK"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -1014,7 +1014,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="messageTableView" destination="CkM-Re-l8r" id="xRp-Em-DBv"/>
+                        <outlet property="heightConstraint" destination="LAL-Ke-uHJ" id="BKK-gA-QgQ"/>
+                        <outlet property="messageTextField" destination="xzr-mR-LYs" id="Q6T-4g-MTu"/>
+                        <outlet property="tableView" destination="CkM-Re-l8r" id="xRp-Em-DBv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZwO-Z8-za3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
