@@ -13,7 +13,6 @@
 		3E03091223BB3A910005D6E7 /* Monster-batman.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E03090E23BB3A910005D6E7 /* Monster-batman.png */; };
 		3E03091323BB3A910005D6E7 /* Purple-raincoat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E03090F23BB3A910005D6E7 /* Purple-raincoat.png */; };
 		3E03091423BB3A910005D6E7 /* Meteor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E03091023BB3A910005D6E7 /* Meteor.png */; };
-		3E03091723BB44100005D6E7 /* FlashChatAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091623BB44100005D6E7 /* FlashChatAuthViewController.swift */; };
 		3E03091923BB45470005D6E7 /* FlashChatRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091823BB45470005D6E7 /* FlashChatRegisterViewController.swift */; };
 		3E03091B23BB47AD0005D6E7 /* FlashChatLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091A23BB47AD0005D6E7 /* FlashChatLoginViewController.swift */; };
 		3E03091D23BB67C90005D6E7 /* FlashChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03091C23BB67C90005D6E7 /* FlashChatViewController.swift */; };
@@ -73,7 +72,6 @@
 		3E03090E23BB3A910005D6E7 /* Monster-batman.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Monster-batman.png"; sourceTree = "<group>"; };
 		3E03090F23BB3A910005D6E7 /* Purple-raincoat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purple-raincoat.png"; sourceTree = "<group>"; };
 		3E03091023BB3A910005D6E7 /* Meteor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Meteor.png; sourceTree = "<group>"; };
-		3E03091623BB44100005D6E7 /* FlashChatAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatAuthViewController.swift; sourceTree = "<group>"; };
 		3E03091823BB45470005D6E7 /* FlashChatRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatRegisterViewController.swift; sourceTree = "<group>"; };
 		3E03091A23BB47AD0005D6E7 /* FlashChatLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatLoginViewController.swift; sourceTree = "<group>"; };
 		3E03091C23BB67C90005D6E7 /* FlashChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashChatViewController.swift; sourceTree = "<group>"; };
@@ -164,7 +162,6 @@
 		3E03091523BB43F00005D6E7 /* FlashChat */ = {
 			isa = PBXGroup;
 			children = (
-				3E03091623BB44100005D6E7 /* FlashChatAuthViewController.swift */,
 				3E03091823BB45470005D6E7 /* FlashChatRegisterViewController.swift */,
 				3E03091A23BB47AD0005D6E7 /* FlashChatLoginViewController.swift */,
 				3E03091C23BB67C90005D6E7 /* FlashChatViewController.swift */,
@@ -521,7 +518,6 @@
 				3E0A97DD23AF779000B6B598 /* DestinyViewController.swift in Sources */,
 				3EEFB58023B1536B000A71E4 /* TipsyBrain.swift in Sources */,
 				3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */,
-				3E03091723BB44100005D6E7 /* FlashChatAuthViewController.swift in Sources */,
 				3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */,
 				3EEFFCE823A69F72003545D7 /* AppDelegate.swift in Sources */,
 				3E557C4E23B3955D00E23C58 /* WeatherData.swift in Sources */,
