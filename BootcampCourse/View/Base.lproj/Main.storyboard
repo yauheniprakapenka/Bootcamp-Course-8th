@@ -2553,7 +2553,13 @@
                             <outlet property="delegate" destination="apS-FW-qzN" id="TST-SU-5f9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo" id="Ltv-li-EFv"/>
+                    <navigationItem key="navigationItem" title="Todo" id="Ltv-li-EFv">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="7mB-7o-SQe">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="apS-FW-qzN" id="MG7-jg-eYN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uks-c3-WgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
