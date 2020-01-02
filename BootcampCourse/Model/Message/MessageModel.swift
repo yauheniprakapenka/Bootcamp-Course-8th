@@ -11,4 +11,5 @@ import Foundation
 class MessageModel {
     var sender = ""
     var messageBody = ""
+    var time = ""
 }

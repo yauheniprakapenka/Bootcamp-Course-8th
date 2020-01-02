@@ -961,7 +961,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CkM-Re-l8r">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="714"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="748"/>
                                 <color key="backgroundColor" red="0.09810539335" green="0.097861699760000004" blue="0.1058836058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="ulA-Tc-66q">
@@ -975,7 +975,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eSW-7a-mx5">
-                                <rect key="frame" x="0.0" y="714" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="748" width="414" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Tf-Rq-Zkx">
                                         <rect key="frame" x="358" y="10" width="40" height="40"/>
@@ -985,6 +985,7 @@
                                             <constraint firstAttribute="width" constant="40" id="d9s-nM-EKB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <color key="tintColor" red="0.45905578139999997" green="0.47022747990000002" blue="0.48627752070000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <state key="normal" image="paperplane.fill" catalog="system">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1020,7 +1021,7 @@
                             <constraint firstItem="YN8-fo-3Ta" firstAttribute="top" secondItem="8D8-SC-2PN" secondAttribute="top" id="REP-Yo-9WM"/>
                             <constraint firstItem="CkM-Re-l8r" firstAttribute="top" secondItem="1SR-n7-ObF" secondAttribute="top" id="Ry9-qi-nYR"/>
                             <constraint firstAttribute="bottom" secondItem="YN8-fo-3Ta" secondAttribute="bottom" id="cmo-rj-lLO"/>
-                            <constraint firstItem="eSW-7a-mx5" firstAttribute="bottom" secondItem="1SR-n7-ObF" secondAttribute="bottom" id="nEC-nU-Rhx"/>
+                            <constraint firstItem="eSW-7a-mx5" firstAttribute="bottom" secondItem="8D8-SC-2PN" secondAttribute="bottom" id="nEC-nU-Rhx"/>
                             <constraint firstItem="1SR-n7-ObF" firstAttribute="trailing" secondItem="YN8-fo-3Ta" secondAttribute="trailing" id="plX-G4-eMp"/>
                             <constraint firstItem="eSW-7a-mx5" firstAttribute="trailing" secondItem="1SR-n7-ObF" secondAttribute="trailing" id="tRo-5p-5mq"/>
                             <constraint firstItem="eSW-7a-mx5" firstAttribute="leading" secondItem="1SR-n7-ObF" secondAttribute="leading" id="ul6-Rg-luD"/>

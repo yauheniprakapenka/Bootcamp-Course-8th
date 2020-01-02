@@ -16,6 +16,7 @@
 		3E03092823BBCAD30005D6E7 /* CustomMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3E03092623BBCAD30005D6E7 /* CustomMessageCell.xib */; };
 		3E03092B23BBE01C0005D6E7 /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03092A23BBE01C0005D6E7 /* MessageModel.swift */; };
 		3E03093223BDF81D0005D6E7 /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E03093123BDF81D0005D6E7 /* sky.png */; };
+		3E03093423BE0C040005D6E7 /* CurrentTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E03093323BE0C040005D6E7 /* CurrentTime.swift */; };
 		3E0A97D123AE065B00B6B598 /* QuizzierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */; };
 		3E0A97D523AE0EE100B6B598 /* Background-Bubbles@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */; };
 		3E0A97D623AE0EE100B6B598 /* Background-Bubbles@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */; };
@@ -72,6 +73,7 @@
 		3E03092623BBCAD30005D6E7 /* CustomMessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomMessageCell.xib; sourceTree = "<group>"; };
 		3E03092A23BBE01C0005D6E7 /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		3E03093123BDF81D0005D6E7 /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		3E03093323BE0C040005D6E7 /* CurrentTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentTime.swift; sourceTree = "<group>"; };
 		3E0A97D023AE065B00B6B598 /* QuizzierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizzierViewController.swift; sourceTree = "<group>"; };
 		3E0A97D323AE0EE100B6B598 /* Background-Bubbles@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@3x.png"; sourceTree = "<group>"; };
 		3E0A97D423AE0EE100B6B598 /* Background-Bubbles@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background-Bubbles@2x.png"; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 				3E0A97DF23AF7D5500B6B598 /* Destiny */,
 				3E557C4A23B352F100E23C58 /* Weather */,
 				3EA54A7A23B618A700C97D06 /* ByteCoin */,
+				3E03093323BE0C040005D6E7 /* CurrentTime.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				3EC6DDE323B0DE9C00AED77F /* BMIModel.swift in Sources */,
 				3E0A97E323AF7F4D00B6B598 /* StoryBrain.swift in Sources */,
 				3E0A97D823AE50E600B6B598 /* QuestionModel.swift in Sources */,
+				3E03093423BE0C040005D6E7 /* CurrentTime.swift in Sources */,
 				3E03092723BBCAD30005D6E7 /* CustomMessageCell.swift in Sources */,
 				3E0A97E123AF7D6C00B6B598 /* StoryModel.swift in Sources */,
 				3EEFFCFC23A6A470003545D7 /* DicesViewController.swift in Sources */,
