@@ -1028,13 +1028,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1SR-n7-ObF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vcr-R1-lK4">
-                        <barButtonItem key="rightBarButtonItem" title="Log out" id="M7G-ef-cqi">
-                            <connections>
-                                <action selector="logOutButtonTapped:" destination="HLd-c1-9c9" id="IPL-2m-2SL"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="vcr-R1-lK4"/>
                     <connections>
                         <outlet property="heightConstraint" destination="LAL-Ke-uHJ" id="BKK-gA-QgQ"/>
                         <outlet property="messageTextField" destination="xzr-mR-LYs" id="Q6T-4g-MTu"/>
@@ -2636,4 +2630,5 @@
     <inferredMetricsTieBreakers>
         <segue reference="a7m-gz-llP"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" red="0.99609202149999998" green="1" blue="0.99607926609999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
 </document>

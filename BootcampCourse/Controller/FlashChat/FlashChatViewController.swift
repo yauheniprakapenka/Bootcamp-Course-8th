@@ -58,15 +58,6 @@ class FlashChatViewController: UIViewController {
         }
     }
     
-    @IBAction func logOutButtonTapped(_ sender: UIBarButtonItem) {
-        do {
-            try Auth.auth().signOut()
-            navigationController?.popToRootViewController(animated: true)
-        } catch {
-            print("sign out error")
-        }
-    }
-    
     @objc func tableViewTapped() {
         view.endEditing(true)
     }
