@@ -10,6 +10,5 @@ target 'BootcampCourse' do
   pod 'Firebase/Auth'
   pod 'Firebase/Database'
   pod 'GoogleAnalytics'
-  pod 'ChameleonFramework'
 
 end
