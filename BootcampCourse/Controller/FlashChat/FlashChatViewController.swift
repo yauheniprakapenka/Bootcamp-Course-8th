@@ -33,6 +33,8 @@ class FlashChatViewController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tableViewTapped))
         tableView.addGestureRecognizer(tapGesture)
+        
+        tableView.separatorStyle = .none
     }
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {
@@ -102,6 +104,14 @@ extension FlashChatViewController: UITableViewDelegate, UITableViewDataSource {
         cell.namelabel.text = messageArray[indexPath.row].sender
         cell.messageLabel.text = messageArray[indexPath.row].messageBody
         cell.avatarImageView.image = #imageLiteral(resourceName: "soft_egg")
+        
+        if cell.namelabel.text! == Auth.auth().currentUser?.email! {
+            cell.avatarImageView.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            cell.messageBackgroundView.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+        } else {
+            cell.avatarImageView.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+            cell.messageBackgroundView.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+        }
 
         return cell
     }
