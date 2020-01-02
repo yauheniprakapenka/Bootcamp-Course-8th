@@ -1,14 +1,21 @@
-# iOS 13 & Swift 5 - The Complete iOS App Development Bootcamp
+# iOS App Development Bootcamp
 
-Прохожу курс от Angela Yu на [Udemy](https://www.udemy.com/course/ios-13-app-development-bootcamp/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Swift_v.PROF_la.EN_cc.ROW_ti.7956&utm_content=deal4584&utm_term=_._ag_81264461025_._ad_394028038225_._kw__._de_c_._dm__._pl__._ti_dsa-774930029729_._li_1001492_._pd__._&matchtype=b&gclid=Cj0KCQiA0NfvBRCVARIsAO4930mEnJVSuuVjcTRklx4ed-qzkRBVU_G5_eX0nDnTl7zAaH4pj4GfcyAaAjBSEALw_wcB)
+<img src="https://img.shields.io/badge/Swift-5-green"> <img src="https://img.shields.io/badge/Xcode-11.3-green"> <img src="https://img.shields.io/badge/iOS-13.3-green">
 
-Swift 5, iOS 13.3, Xcode 11.3
+Прохожу курс от [Angela Yu](https://www.udemy.com/course/ios-13-app-development-bootcamp/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Swift_v.PROF_la.EN_cc.ROW_ti.7956&utm_content=deal4584&utm_term=_._ag_81264461025_._ad_394028038225_._kw__._de_c_._dm__._pl__._ti_dsa-774930029729_._li_1001492_._pd__._&matchtype=b&gclid=Cj0KCQiA0NfvBRCVARIsAO4930mEnJVSuuVjcTRklx4ed-qzkRBVU_G5_eX0nDnTl7zAaH4pj4GfcyAaAjBSEALw_wcB)
+
+
+<b>Flash chat</b>
+- Взаимодействие через Firebase
+
+Видео: https://drive.google.com/open?id=1VD3k5g7phMMrrmYGnY2oV4j2ZlZWQ2nA
+
+<a href="https://ibb.co/qsk8cwJ"><img src="https://i.ibb.co/4TPLXx1/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-01-02-at-17-52-32.png" width="200"></a>
 
 <b>Стоимость ByteCoin</b>
 - Получение стоимости ByteCoin через API
 
 Видео: [Ссылка](https://drive.google.com/open?id=1mk2rbBxGcQIC75yWqOvHz4TjBwHbM8rY)
-
 
 <a href="https://ibb.co/ncSNSF4"><img src="https://i.ibb.co/bBnMnkY/Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-35.png" alt="Simulator-Screen-Shot-i-Phone-11-2019-12-28-at-14-22-35" width="200"></a>
 
@@ -18,8 +25,8 @@ Swift 5, iOS 13.3, Xcode 11.3
 
 Видео: [ссылка](https://drive.google.com/open?id=1SWxQRFu5HEzISY-gRKRl_aMSpCDfCWWO)
 
-<a href="https://ibb.co/zFzRFTC"><img src="https://i.ibb.co/r3V63Rq/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57.png" alt="Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57" width="200"></a>
-<a href="https://ibb.co/XZZGf0P"><img src="https://i.ibb.co/1ff4YyN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28.png" alt="Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28" width="200"></a>
+<a href="https://ibb.co/zFzRFTC"><img src="https://i.ibb.co/r3V63Rq/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-50-57.png" width="200"></a>
+<a href="https://ibb.co/XZZGf0P"><img src="https://i.ibb.co/1ff4YyN/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2019-12-26-at-23-51-28.png" width="200"></a>
 
 <b>Чаевые</b>
 - Калькулятор чаевых
