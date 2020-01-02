@@ -17,14 +17,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iZR-Ju-X0Y">
-                        <rect key="frame" x="10" y="16" width="50" height="50"/>
+                        <rect key="frame" x="10" y="8" width="50" height="50"/>
+                        <color key="backgroundColor" red="0.1031636968" green="0.10318539290000001" blue="0.1134238318" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="50" id="GFH-qn-CFo"/>
                             <constraint firstAttribute="width" constant="50" id="Poh-cn-699"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKN-Pa-u1A">
-                        <rect key="frame" x="76" y="16" width="253" height="68"/>
+                        <rect key="frame" x="76" y="8" width="253" height="84"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YuI-AR-HXf">
                                 <rect key="frame" x="10" y="8" width="243" height="17"/>
@@ -32,17 +33,17 @@
                                     <constraint firstAttribute="height" constant="17" id="UVd-6t-JDc"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.83163911099999999" green="0.85069578889999997" blue="0.86274820569999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INB-wD-F2n">
-                                <rect key="frame" x="10" y="33" width="243" height="27"/>
+                                <rect key="frame" x="10" y="33" width="243" height="43"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.99609202149999998" green="1" blue="0.99607926609999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.94747704267501831" green="0.927440345287323" blue="0.77656263113021851" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.16098847990000001" green="0.18029230830000001" blue="0.18431490659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="YuI-AR-HXf" firstAttribute="leading" secondItem="eKN-Pa-u1A" secondAttribute="leading" constant="10" id="2Vf-CD-uwo"/>
                             <constraint firstAttribute="trailing" secondItem="INB-wD-F2n" secondAttribute="trailing" id="9Mf-ZA-fN8"/>
@@ -54,11 +55,12 @@
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" red="0.09810539335" green="0.097861699760000004" blue="0.1058836058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                 <constraints>
                     <constraint firstItem="eKN-Pa-u1A" firstAttribute="leading" secondItem="iZR-Ju-X0Y" secondAttribute="trailing" constant="16" id="6In-G4-mim"/>
-                    <constraint firstItem="iZR-Ju-X0Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="gi0-en-oJt"/>
-                    <constraint firstAttribute="bottom" secondItem="eKN-Pa-u1A" secondAttribute="bottom" constant="16" id="iub-nM-g5s"/>
-                    <constraint firstItem="eKN-Pa-u1A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="sCE-Kr-2qQ"/>
+                    <constraint firstItem="iZR-Ju-X0Y" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="gi0-en-oJt"/>
+                    <constraint firstAttribute="bottom" secondItem="eKN-Pa-u1A" secondAttribute="bottom" constant="8" id="iub-nM-g5s"/>
+                    <constraint firstItem="eKN-Pa-u1A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="sCE-Kr-2qQ"/>
                     <constraint firstAttribute="trailing" secondItem="eKN-Pa-u1A" secondAttribute="trailing" constant="16" id="xaW-j4-ddk"/>
                     <constraint firstItem="iZR-Ju-X0Y" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xix-fh-CEb"/>
                 </constraints>
@@ -70,7 +72,7 @@
                 <outlet property="messageLabel" destination="INB-wD-F2n" id="KhA-ra-nUF"/>
                 <outlet property="namelabel" destination="YuI-AR-HXf" id="ndd-KB-kHm"/>
             </connections>
-            <point key="canvasLocation" x="155.79710144927537" y="162.05357142857142"/>
+            <point key="canvasLocation" x="15" y="83"/>
         </tableViewCell>
     </objects>
 </document>

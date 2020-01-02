@@ -6,7 +6,7 @@
 
 
 <b>Flash chat</b>
-- Установлены зависимости через Cocoa Pods: Firebase
+- Аутентификация через Firebase и хранение данных 
 
 <b>Стоимость ByteCoin</b>
 - Получение стоимости ByteCoin через API

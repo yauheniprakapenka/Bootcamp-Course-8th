@@ -12,7 +12,7 @@ import Firebase
 class FlashChatViewController: UIViewController {
     
     private var messageArray = [MessageModel]()
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var heightConstraint: NSLayoutConstraint!
     @IBOutlet weak var messageTextField: UITextField!
@@ -26,6 +26,7 @@ class FlashChatViewController: UIViewController {
         tableView.dataSource = self
         
         messageTextField.delegate = self
+        messageTextField.attributedPlaceholder = NSAttributedString(string: "Сообщение", attributes: [NSAttributedString.Key.foregroundColor: #colorLiteral(red: 0.6343232393, green: 0.6631767154, blue: 0.6889144778, alpha: 1)])
         
         tableView.register(UINib(nibName: "CustomMessageCell", bundle: nil), forCellReuseIdentifier: "customMessageCell")
         configureTableView()
@@ -94,8 +95,12 @@ class FlashChatViewController: UIViewController {
     
     private func showLastMessage() {
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
-            let indexPath = IndexPath(row: self.messageArray.count - 1, section: 0)
-            self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+            let count = self.messageArray.count
+            if count > 0 {
+                let indexPath = IndexPath(row: self.messageArray.count - 1, section: 0)
+                self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+            }
+            
         }
     }
 }
@@ -112,16 +117,16 @@ extension FlashChatViewController: UITableViewDelegate, UITableViewDataSource {
         
         cell.namelabel.text = messageArray[indexPath.row].sender
         cell.messageLabel.text = messageArray[indexPath.row].messageBody
-        cell.avatarImageView.image = #imageLiteral(resourceName: "soft_egg")
         
         if cell.namelabel.text! == Auth.auth().currentUser?.email! {
-            cell.avatarImageView.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
-            cell.messageBackgroundView.backgroundColor = #colorLiteral(red: 0.4745098054, green: 0.8392156959, blue: 0.9764705896, alpha: 1)
+            cell.messageBackgroundView.backgroundColor = #colorLiteral(red: 0.2698300481, green: 0.2745030522, blue: 0.2831587195, alpha: 1)
+            cell.avatarImageView.alpha = 0
         } else {
-            cell.avatarImageView.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
-            cell.messageBackgroundView.backgroundColor = #colorLiteral(red: 0.9568627477, green: 0.6588235497, blue: 0.5450980663, alpha: 1)
+            cell.messageBackgroundView.backgroundColor = #colorLiteral(red: 0.1717960536, green: 0.1764581203, blue: 0.1851234138, alpha: 1)
+            cell.avatarImageView.image = #imageLiteral(resourceName: "spiderman")
+            cell.avatarImageView.alpha = 1
         }
-
+        
         return cell
     }
 }

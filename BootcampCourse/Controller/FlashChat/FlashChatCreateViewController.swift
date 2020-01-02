@@ -1,5 +1,5 @@
 //
-//  FlashChatLoginViewController.swift
+//  FlashChatRegisterViewController.swift
 //  BootcampCourse
 //
 //  Created by yauheni prakapenka on 31.12.2019.
@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class FlashChatLoginViewController: UIViewController {
+class FlashChatCreateViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
@@ -22,14 +22,14 @@ class FlashChatLoginViewController: UIViewController {
         passwordTextField.text = "123456"
     }
     
-    @IBAction func loginButtonTapped(_ sender: UIButton) {
+    @IBAction func registerButtonTapped(_ sender: UIButton) {
         activityIndicator.startAnimating()
-        Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!) { (authDataResult, error) in
+        Auth.auth().createUser(withEmail: emailTextField.text!, password: passwordTextField.text!) { (user, error) in
             if error != nil {
                 print(error!)
                 self.activityIndicator.stopAnimating()
             } else {
-                print("signIn successful")
+                print("Registration successful")
                 self.performSegue(withIdentifier: "goToChat", sender: self)
                 self.activityIndicator.stopAnimating()
             }
