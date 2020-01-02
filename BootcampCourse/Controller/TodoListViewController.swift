@@ -10,15 +10,11 @@ import UIKit
 
 class TodoListViewController: UITableViewController {
     
-    @IBOutlet var todoListTableView: UITableView!
-    
     let itemArray = ["Find Mike", "buy Eggos", "Destroy demogorgon"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        todoListTableView.delegate = self
-//        todoListTableView.dataSource = self
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -27,9 +23,19 @@ class TodoListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TodoItemCell", for: indexPath)
-        
         cell.textLabel?.text = itemArray[indexPath.row]
         
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
+        guard tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark else {
+            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
+            return
+        }
+        
+        tableView.cellForRow(at: indexPath)?.accessoryType = .none
     }
 }
