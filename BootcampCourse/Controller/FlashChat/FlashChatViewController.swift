@@ -35,6 +35,8 @@ class FlashChatViewController: UIViewController {
         tableView.addGestureRecognizer(tapGesture)
         
         tableView.separatorStyle = .none
+        
+        showLastMessage()
     }
     
     @IBAction func sendButtonTapped(_ sender: UIButton) {
@@ -87,6 +89,13 @@ class FlashChatViewController: UIViewController {
             self.tableView.reloadData()
             
             print(sender, messageBody)
+        }
+    }
+    
+    private func showLastMessage() {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
+            let indexPath = IndexPath(row: self.messageArray.count - 1, section: 0)
+            self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }
     }
 }
