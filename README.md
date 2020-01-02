@@ -6,7 +6,11 @@
 
 
 <b>Flash chat</b>
-- Аутентификация через Firebase и хранение данных 
+- Взаимодействие через Firebase
+
+Видео: https://drive.google.com/open?id=1VD3k5g7phMMrrmYGnY2oV4j2ZlZWQ2nA
+
+<a href="https://ibb.co/qsk8cwJ"><img src="https://i.ibb.co/4TPLXx1/Simulator-Screen-Shot-i-Phone-11-Pro-Max-2020-01-02-at-17-52-32.png" width="200"></a>
 
 <b>Стоимость ByteCoin</b>
 - Получение стоимости ByteCoin через API
