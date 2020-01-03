@@ -8,7 +8,7 @@
 
 import Foundation
 
-class TodoListModel {
+class TodoListModel: Codable {
     var title = ""
     var done = false
 }

@@ -11,22 +11,13 @@ import UIKit
 class TodoListViewController: UITableViewController {
     
     var itemArray = [TodoListModel]()
-    let defaults = UserDefaults.standard
+    let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        let newItem1 = TodoListModel()
-        newItem1.title = "find mike"
-        itemArray.append(newItem1)
-
-        let newItem2 = TodoListModel()
-        newItem2.title = "buy eggos"
-        itemArray.append(newItem2)
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist"))
         
-        if let items = defaults.array(forKey: "TodoListArray") as? [TodoListModel] {
-            itemArray = items
-        }
+        loadItems()
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +34,7 @@ class TodoListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
+        saveItems()
         tableView.reloadData()
     }
     
@@ -54,15 +46,40 @@ class TodoListViewController: UITableViewController {
             let newItem = TodoListModel()
             newItem.title = userInput.text!
             self.itemArray.append(newItem)
-
+            
+            self.saveItems()
+            
             self.tableView.reloadData()
         }
         
         alert.addTextField { (textField) in
             textField.placeholder = "Enter item"
         }
-            
+        
         alert.addAction(addAction)
         present(alert, animated: true)
+    }
+    
+    private func saveItems() {
+        let encoder = PropertyListEncoder()
+        
+        do {
+            let data = try encoder.encode(self.itemArray)
+            try data.write(to: self.dataFilePath!)
+            
+        } catch {
+            print(error)
+        }
+    }
+    
+    private func loadItems() {
+        if let data = try? Data(contentsOf: dataFilePath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                itemArray = try decoder.decode([TodoListModel].self, from: data)
+            } catch {
+                print(error)
+            }
+        }
     }
 }
