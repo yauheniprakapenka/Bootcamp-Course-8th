@@ -98,6 +98,10 @@ extension TodoListViewController: UISearchBarDelegate, UIPickerViewDelegate, UII
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchText.count == 0 {
             loadItems()
+            
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
         }
     }
     
