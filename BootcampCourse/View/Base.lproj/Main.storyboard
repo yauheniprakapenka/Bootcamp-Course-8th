@@ -1990,7 +1990,7 @@
                                         <rect key="frame" x="0.0" y="281" width="414" height="280"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball3" translatesAutoresizingMaskIntoConstraints="NO" id="jaH-Yq-4EH">
-                                                <rect key="frame" x="54.5" y="20" width="305" height="240"/>
+                                                <rect key="frame" x="-98" y="20" width="610" height="240"/>
                                             </imageView>
                                         </subviews>
                                         <constraints>
@@ -2529,10 +2529,10 @@
             </objects>
             <point key="canvasLocation" x="1099" y="2204"/>
         </scene>
-        <!--Todo-->
+        <!--Items-->
         <scene sceneID="Av2-3E-zc5">
             <objects>
-                <tableViewController id="apS-FW-qzN" customClass="TodoListViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController modalPresentationStyle="fullScreen" id="apS-FW-qzN" customClass="TodoListViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="x7p-UB-9z5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -2561,7 +2561,7 @@
                             <outlet property="delegate" destination="apS-FW-qzN" id="TST-SU-5f9"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todo" id="Ltv-li-EFv">
+                    <navigationItem key="navigationItem" title="Items" id="Ltv-li-EFv">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="7mB-7o-SQe">
                             <connections>
                                 <action selector="addButtonTapped:" destination="apS-FW-qzN" id="MG7-jg-eYN"/>
@@ -2570,6 +2570,44 @@
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uks-c3-WgJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2530" y="2900"/>
+        </scene>
+        <!--Todo-->
+        <scene sceneID="MXB-oF-dRX">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="Lq1-pA-p29" customClass="CategoryViewController" customModule="BootcampCourse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Lx7-Td-oHG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="l9R-Hw-c5F">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="l9R-Hw-c5F" id="RY1-3U-ITn">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Lq1-pA-p29" id="xVh-k6-Pkk"/>
+                            <outlet property="delegate" destination="Lq1-pA-p29" id="REV-cN-V54"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Todo" id="eN9-bl-YRq">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="tMp-nF-iIy">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="Lq1-pA-p29" id="ifv-wl-L4H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="apS-FW-qzN" kind="show" identifier="goToItem" id="Aox-ti-FC5"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x3l-4a-m3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1793" y="2900"/>
         </scene>
@@ -2652,7 +2690,7 @@
         <!--Navigation Controller-->
         <scene sceneID="4up-K5-KZQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zB6-LC-Y3z" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="zB6-LC-Y3z" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="79u-Ll-DTf">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -2664,7 +2702,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="apS-FW-qzN" kind="relationship" relationship="rootViewController" id="yai-0Z-qix"/>
+                        <segue destination="Lq1-pA-p29" kind="relationship" relationship="rootViewController" id="7L5-lh-azk"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KdF-iD-gOd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
