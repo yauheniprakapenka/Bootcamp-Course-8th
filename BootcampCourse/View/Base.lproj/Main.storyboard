@@ -2604,7 +2604,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <segue destination="apS-FW-qzN" kind="show" identifier="goToItem" id="Aox-ti-FC5"/>
+                        <segue destination="apS-FW-qzN" kind="show" identifier="goToItems" id="Aox-ti-FC5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x3l-4a-m3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
