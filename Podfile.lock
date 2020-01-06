@@ -1,7 +1,4 @@
 PODS:
-  - ChameleonFramework (2.1.0):
-    - ChameleonFramework/Default (= 2.1.0)
-  - ChameleonFramework/Default (2.1.0)
   - Firebase (6.14.0):
     - Firebase/Core (= 6.14.0)
   - Firebase/Auth (6.14.0):
@@ -87,17 +84,17 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
+  - SwipeCellKit (2.7.1)
 
 DEPENDENCIES:
-  - ChameleonFramework
   - Firebase
   - Firebase/Auth
   - Firebase/Database
   - GoogleAnalytics
+  - SwipeCellKit
 
 SPEC REPOS:
   trunk:
-    - ChameleonFramework
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -115,9 +112,9 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - nanopb
+    - SwipeCellKit
 
 SPEC CHECKSUMS:
-  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   Firebase: 0219bb4782eb1406f1b9b0628a2e625484ce910d
   FirebaseAnalytics: f68b9f3f1241385129ae0a83b63627fc420c05e5
   FirebaseAuth: 831577b184ecaba38bc886768c1c22a450cc44e3
@@ -135,7 +132,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  SwipeCellKit: 3972254a826da74609926daf59b08d6c72e619ea
 
-PODFILE CHECKSUM: bcf509a5bf26e5bb65b45f1ca4553305f3d1bf08
+PODFILE CHECKSUM: c0a6801c95c2c2e03d3c1371d145ec74ef27a615
 
 COCOAPODS: 1.8.4
