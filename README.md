@@ -78,8 +78,10 @@
 <b>Калькулятор</b>
 - Auto layout (только UI, без функционала)
 
-<a href="https://ibb.co/y6YD5Q0"><img src="https://i.ibb.co/Htx0YH7/Screenshot-2019-12-18-at-16-39-26.png" width="200"></a>
-<a href="https://ibb.co/Scw31hn"><img src="https://i.ibb.co/ypFQMwy/Screenshot-2019-12-18-at-16-39-45.png" width="400"></a>
+
+
+<a href="https://user-images.githubusercontent.com/47568606/71912491-a4e3e980-3186-11ea-9d83-b40789132cb9.png" width="200"></a>
+<a href="https://user-images.githubusercontent.com/47568606/71912546-c2b14e80-3186-11ea-8ee2-f091d8fd282e.png" width="400"></a>
 
 <b>Магический шар</b>
 - После нажатия кнопки генерируется случайный ответ
