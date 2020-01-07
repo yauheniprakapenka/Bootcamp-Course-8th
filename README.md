@@ -78,8 +78,7 @@
 <b>Калькулятор</b>
 - Auto layout 
 
-<a href="https://ibb.co/ZhhnZ1q"><img src="https://i.ibb.co/P557Szq/Simulator-Screen-Shot-i-Phone-8-2020-01-07-at-19-35-15.png" width="200"></a>
-<a href="https://ibb.co/3F9BF1M"><img src="https://i.ibb.co/PWvwWx9/Screenshot-2020-01-07-at-19-35-44.png" width="400"></a>
+<img width="400" alt="Screenshot 2020-01-07 at 19 35 44" src="https://user-images.githubusercontent.com/47568606/71912546-c2b14e80-3186-11ea-8ee2-f091d8fd282e.png">     <img width="200" alt="Screenshot 2020-01-07 at 19 35 44" src="https://user-images.githubusercontent.com/47568606/71912744-22a7f500-3187-11ea-8c83-e9883a614a05.png">
 
 <b>Магический шар</b>
 - После нажатия кнопки генерируется случайный ответ
