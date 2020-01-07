@@ -13,22 +13,31 @@ class CalculatorViewController: UIViewController {
     @IBOutlet weak var displayLabel: UILabel!
     
     private var isFinishedTypingNumber = true
+    private var displayValue: Double {
+        get {
+            guard let number = Double(displayLabel.text!) else {
+                fatalError("Cannot convert display label text to a double")
+            }
+            return number
+        }
+        
+        set {
+            displayLabel.text = String(newValue)
+        }
+    }
     
     @IBAction func calcButtonTapped(_ sender: UIButton) {
+
         isFinishedTypingNumber = true
-        
-        guard let number = Double(displayLabel.text!) else {
-            fatalError("Cannot convert display label text to a double")
-        }
             
         if let calcMethod = sender.currentTitle {
             switch calcMethod {
             case "+/-":
-                displayLabel.text = String("\(number * -1)")
+                displayValue *= -1
             case "AC":
                 displayLabel.text = "0"
             case "%":
-                displayLabel.text = String(number / 100 )
+                displayValue *= 0.01
             default:
                 fatalError("Unknown calc method")
             }
@@ -37,28 +46,23 @@ class CalculatorViewController: UIViewController {
     
     @IBAction func numberButtonTapped(_ sender: UIButton) {
         
-        if let numValue = sender.currentTitle {
+        if let numberValue = sender.currentTitle {
             
             if isFinishedTypingNumber {
-                displayLabel.text = sender.currentTitle
+                displayLabel.text = numberValue
                 isFinishedTypingNumber = false
             } else {
-                if numValue == "." {
-                    guard let currentDisplayValue = Double(displayLabel.text!) else {
-                        fatalError("Cannot convert display label text to a Double")
-                    }
-                    
-                    let isInt = floor(currentDisplayValue) == currentDisplayValue
+                if numberValue == "." {
+                  
+                    let isInt = floor(displayValue) == displayValue
                     
                     if !isInt {
                         return
                     }
                 }
                 
-                displayLabel.text! += numValue
+                displayLabel.text! += numberValue
             }
-            
         }
     }
-    
 }
