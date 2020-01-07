@@ -52,6 +52,7 @@
 		3EC6DDE323B0DE9C00AED77F /* BMIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC6DDE223B0DE9C00AED77F /* BMIModel.swift */; };
 		3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */; };
 		3EE5F03823AD0B2100DBFAC6 /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */; };
+		3EEE012C23C4CD9F00CF1538 /* CalculatorLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEE012B23C4CD9F00CF1538 /* CalculatorLogic.swift */; };
 		3EEFB57923B10B54000A71E4 /* TipsyCalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57823B10B54000A71E4 /* TipsyCalculatorViewController.swift */; };
 		3EEFB57B23B1314C000A71E4 /* TipsyResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */; };
 		3EEFB57E23B15303000A71E4 /* TipsyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEFB57D23B15303000A71E4 /* TipsyModel.swift */; };
@@ -112,6 +113,7 @@
 		3EC6DDE223B0DE9C00AED77F /* BMIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIModel.swift; sourceTree = "<group>"; };
 		3EE5F03423ABB2B200DBFAC6 /* EggsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EggsViewController.swift; sourceTree = "<group>"; };
 		3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = alarm_sound.mp3; sourceTree = "<group>"; };
+		3EEE012B23C4CD9F00CF1538 /* CalculatorLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorLogic.swift; sourceTree = "<group>"; };
 		3EEFB57823B10B54000A71E4 /* TipsyCalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyCalculatorViewController.swift; sourceTree = "<group>"; };
 		3EEFB57A23B1314C000A71E4 /* TipsyResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyResultViewController.swift; sourceTree = "<group>"; };
 		3EEFB57D23B15303000A71E4 /* TipsyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsyModel.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				3E557C4A23B352F100E23C58 /* Weather */,
 				3EA54A7A23B618A700C97D06 /* ByteCoin */,
 				3EF806D423BF38A7001CA93A /* TodoList */,
+				3EEE012A23C4CD7A00CF1538 /* Calculator */,
 				3E03093323BE0C040005D6E7 /* CurrentTime.swift */,
 			);
 			path = Model;
@@ -344,6 +347,14 @@
 				3EE5F03723AD0B2100DBFAC6 /* alarm_sound.mp3 */,
 			);
 			path = Eggs;
+			sourceTree = "<group>";
+		};
+		3EEE012A23C4CD7A00CF1538 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				3EEE012B23C4CD9F00CF1538 /* CalculatorLogic.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 		3EEFB57C23B152ED000A71E4 /* Tipsy */ = {
@@ -532,6 +543,7 @@
 				3EA54A7C23B6191E00C97D06 /* CoinManager.swift in Sources */,
 				3E59E6FD23BFDE7100D1C45A /* DataModel.xcdatamodeld in Sources */,
 				3EE5F03523ABB2B200DBFAC6 /* EggsViewController.swift in Sources */,
+				3EEE012C23C4CD9F00CF1538 /* CalculatorLogic.swift in Sources */,
 				3E0A97DD23AF779000B6B598 /* DestinyViewController.swift in Sources */,
 				3EEFB58023B1536B000A71E4 /* TipsyBrain.swift in Sources */,
 				3EEFFCEC23A69F72003545D7 /* ViewController.swift in Sources */,
