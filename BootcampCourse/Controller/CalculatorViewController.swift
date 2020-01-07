@@ -12,6 +12,8 @@ class CalculatorViewController: UIViewController {
     
     @IBOutlet weak var displayLabel: UILabel!
     
+    private var calculator = CalculatorLogic()
+    
     private var isFinishedTypingNumber = true
     private var displayValue: Double {
         get {
@@ -31,17 +33,12 @@ class CalculatorViewController: UIViewController {
         isFinishedTypingNumber = true
             
         if let calcMethod = sender.currentTitle {
-            switch calcMethod {
-            case "+/-":
-                displayValue *= -1
-            case "AC":
-                displayLabel.text = "0"
-            case "%":
-                displayValue *= 0.01
-            default:
-                fatalError("Unknown calc method")
+            if let result = calculator.calculate(symbol: calcMethod) {
+                displayValue = result
             }
+            
         }
+        
     }
     
     @IBAction func numberButtonTapped(_ sender: UIButton) {
