@@ -78,7 +78,7 @@
 <b>Калькулятор</b>
 - Auto layout 
 
-<img width="400" alt="Screenshot 2020-01-07 at 19 35 44" src="https://user-images.githubusercontent.com/47568606/71912546-c2b14e80-3186-11ea-8ee2-f091d8fd282e.png">     <img width="200" alt="Screenshot 2020-01-07 at 19 35 44" src="https://user-images.githubusercontent.com/47568606/71912744-22a7f500-3187-11ea-8c83-e9883a614a05.png">
+<img src="https://user-images.githubusercontent.com/47568606/71922693-7cff8080-319c-11ea-8298-0209758fc0ed.png" width="200">     <img src="https://user-images.githubusercontent.com/47568606/71922910-f1d2ba80-319c-11ea-9395-3ed471ff8a55.png" width="400">
 
 <b>Магический шар</b>
 - После нажатия кнопки генерируется случайный ответ
