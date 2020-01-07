@@ -76,10 +76,10 @@
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/KqDB49g/Screenshot-2019-12-18-at-21-26-34.png" width="200"></a>
 
 <b>Калькулятор</b>
-- Auto layout (только UI, без функционала)
+- Auto layout 
 
-<a href="https://ibb.co/y6YD5Q0"><img src="https://i.ibb.co/Htx0YH7/Screenshot-2019-12-18-at-16-39-26.png" width="200"></a>
-<a href="https://ibb.co/Scw31hn"><img src="https://i.ibb.co/ypFQMwy/Screenshot-2019-12-18-at-16-39-45.png" width="400"></a>
+<a href="https://ibb.co/ZhhnZ1q"><img src="https://i.ibb.co/P557Szq/Simulator-Screen-Shot-i-Phone-8-2020-01-07-at-19-35-15.png" width="200"></a>
+<a href="https://ibb.co/3F9BF1M"><img src="https://i.ibb.co/PWvwWx9/Screenshot-2020-01-07-at-19-35-44.png" width="400"></a>
 
 <b>Магический шар</b>
 - После нажатия кнопки генерируется случайный ответ
